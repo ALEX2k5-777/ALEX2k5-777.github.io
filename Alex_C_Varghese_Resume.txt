@@ -1,0 +1,29 @@
+ALEX C VARGHESE
+MCA Student | AI & Machine Learning Developer
+Email: alexcvarghese777@gmail.com | Phone: +91 9747315186 | Location: Alappuzha, Kuttanad, Kerala
+LinkedIn: https://www.linkedin.com/in/alex-c-varghese-038581358/
+GitHub: https://github.com/ALEX2k5-777
+Instagram: https://www.instagram.com/_a.l.e.x__.c.__/
+
+SUMMARY
+Motivated MCA student at Amal Jyothi College of Engineering (BCA Graduate from Saintgits College of Applied Science) with a strong interest in AI and Machine Learning. Possesses hands-on experience in developing and deploying machine learning-based web applications, audio applications, and predictive models.
+
+EDUCATION
+- Amal Jyothi College of Engineering, Kanjirappally: Master of Computer Applications (MCA) [2026 - Present]
+- Saintgits College of Applied Science, Kottayam: Bachelor of Computer Application (BCA) [CGPA: 7.07] (2023 - 2026)
+- St George HSS, Muttar: Higher Secondary Education [83.9%] (2021 - 2023)
+- St George HSS, Muttar: 10th Standard (SSLC) [Full A+] (2020 - 2021)
+
+PROJECTS
+1. VibePlayer (GitHub: https://github.com/ALEX2k5-777/vibeplayer)
+2. Air Quality Index (AQI) Prediction Web App (Akira Software Solutions, Technopark | GitHub: https://github.com/ALEX2k5-777/Air-Quality-Model-)
+3. AGRIGO (Academic AgriTech Platform)
+4. Fly-Vezhambal (GitHub: https://github.com/ALEX2k5-777/fly-vezhambal)
+
+ACHIEVEMENT
+- Winner of i_hack 4.0 Hackathon (College Level)
+
+CERTIFICATIONS
+- Build a Machine Learning Web App with Streamlit & Python (Coursera)
+- Introduction to Artificial Intelligence (IBM)
+- Basics of Python (Infosys Springboard)

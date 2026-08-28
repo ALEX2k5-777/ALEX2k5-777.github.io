@@ -1,0 +1,157 @@
+# Python script to generate resume files with 4 distinct projects (VibePlayer, AQI Model, AGRIGO, Fly-Vezhambal)
+
+resume_html = """<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alex C Varghese - Resume</title>
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #1e293b; max-width: 800px; margin: 40px auto; padding: 20px; background: #fff; }
+    h1 { color: #0f172a; margin-bottom: 4px; font-size: 28px; }
+    .subtitle { color: #0284c7; font-weight: 600; font-size: 16px; margin-bottom: 12px; }
+    .contact-info { font-size: 13px; color: #475569; border-bottom: 2px solid #e2e8f0; padding-bottom: 12px; margin-bottom: 20px; }
+    a { color: #0284c7; text-decoration: none; }
+    h2 { color: #0f172a; border-bottom: 1px solid #cbd5e1; padding-bottom: 4px; margin-top: 24px; font-size: 18px; text-transform: uppercase; letter-spacing: 0.5px; }
+    ul { padding-left: 20px; margin: 8px 0; }
+    li { margin-bottom: 6px; }
+    .job-title { font-weight: bold; color: #0f172a; }
+    .institution { font-style: italic; color: #334155; }
+    .date { float: right; color: #64748b; font-size: 14px; font-weight: 600; }
+    @media print {
+      body { margin: 0; padding: 0; }
+      .no-print { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="no-print" style="text-align: right; margin-bottom: 20px;">
+    <button onclick="window.print()" style="background: #0284c7; color: white; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold;">
+      🖨️ Print / Save as PDF
+    </button>
+  </div>
+
+  <h1>ALEX C VARGHESE</h1>
+  <div class="subtitle">MCA STUDENT | AI & MACHINE LEARNING DEVELOPER</div>
+  <div class="contact-info">
+    📧 alexcvarghese777@gmail.com | 📞 +91 9747315186 | 📍 Alappuzha, Kuttanad, Kerala<br>
+    🔗 LinkedIn: <a href="https://www.linkedin.com/in/alex-c-varghese-038581358/" target="_blank">alex-c-varghese-038581358</a> | 
+    💻 GitHub: <a href="https://github.com/ALEX2k5-777" target="_blank">ALEX2k5-777</a> | 
+    📷 Instagram: @_a.l.e.x__.c.__
+  </div>
+
+  <h2>Summary</h2>
+  <p>
+    Motivated MCA student at Amal Jyothi College of Engineering (BCA Graduate from Saintgits College of Applied Science) with a strong interest in AI and Machine Learning. Possesses hands-on experience in developing and deploying machine learning-based web applications, audio applications, predictive models, and data-driven systems. Strong foundation in Python, C++, data processing, and problem-solving.
+  </p>
+
+  <h2>Education</h2>
+  <div>
+    <span class="date">2026 – Present</span>
+    <div class="job-title">Master of Computer Applications (MCA)</div>
+    <div class="institution">Amal Jyothi College of Engineering, Kanjirappally</div>
+  </div>
+  <br>
+  <div>
+    <span class="date">2023 – 2026 (CGPA: 7.07)</span>
+    <div class="job-title">Bachelor of Computer Application (BCA)</div>
+    <div class="institution">Saintgits College of Applied Science, Kottayam</div>
+  </div>
+  <br>
+  <div>
+    <span class="date">2021 – 2023 (Score: 83.9%)</span>
+    <div class="job-title">Higher Secondary Education</div>
+    <div class="institution">St George HSS, Muttar</div>
+  </div>
+  <br>
+  <div>
+    <span class="date">2020 – 2021 (Score: Full A+)</span>
+    <div class="job-title">10th Standard (SSLC)</div>
+    <div class="institution">St George HSS, Muttar</div>
+  </div>
+
+  <h2>Projects</h2>
+  <div>
+    <div class="job-title">1. VibePlayer — Media & Audio Player Application</div>
+    <div class="institution">GitHub: <a href="https://github.com/ALEX2k5-777/vibeplayer" target="_blank">github.com/ALEX2k5-777/vibeplayer</a></div>
+    <ul>
+      <li>Developed a modern audio and media player application designed for seamless playback, playlist organization, and custom audio visualizer controls.</li>
+    </ul>
+  </div>
+  <div>
+    <div class="job-title">2. Air Quality Index (AQI) Prediction Web App</div>
+    <div class="institution">Akira Software Solutions Pvt Ltd, Technopark - Trivandrum | GitHub: <a href="https://github.com/ALEX2k5-777/Air-Quality-Model-" target="_blank">github.com/ALEX2k5-777/Air-Quality-Model-</a></div>
+    <ul>
+      <li>Developed a machine learning web application to predict Air Quality Index. Implemented data preprocessing, model training, and integration with a Streamlit interface.</li>
+    </ul>
+  </div>
+  <div>
+    <div class="job-title">3. AGRIGO — Agricultural Management Web App</div>
+    <div class="institution">Academic / Custom AgriTech Platform</div>
+    <ul>
+      <li>Developed a dynamic agricultural management platform to help farmers track field data and optimize irrigation practices with real-time weather APIs and secure multi-role auth.</li>
+    </ul>
+  </div>
+  <div>
+    <div class="job-title">4. Fly-Vezhambal — Web Application</div>
+    <div class="institution">GitHub: <a href="https://github.com/ALEX2k5-777/fly-vezhambal" target="_blank">github.com/ALEX2k5-777/fly-vezhambal</a></div>
+    <ul>
+      <li>Developed a web application featuring custom UI design and interactive frontend integration.</li>
+    </ul>
+  </div>
+
+  <h2>Technical Skills & Achievements</h2>
+  <ul>
+    <li><strong>Programming Languages:</strong> Python, Java, C++, JavaScript, HTML5/CSS3</li>
+    <li><strong>AI & Machine Learning:</strong> Streamlit, Predictive Modeling, Data Preprocessing, Weather APIs</li>
+    <li><strong>Soft Skills:</strong> Teamwork & Collaboration, Responsibility, Self Learner, Problem Solving</li>
+    <li><strong>Achievement:</strong> 🏆 <strong>i_hack 4.0 Winner</strong> (College Level Hackathon)</li>
+  </ul>
+
+  <h2>Certifications</h2>
+  <ul>
+    <li>Build a Machine Learning Web App with Streamlit & Python – <em>Coursera</em></li>
+    <li>Introduction to Artificial Intelligence (AI) – <em>IBM</em></li>
+    <li>Basics of Python – <em>Infosys Springboard</em></li>
+  </ul>
+</body>
+</html>
+"""
+
+resume_txt = """ALEX C VARGHESE
+MCA Student | AI & Machine Learning Developer
+Email: alexcvarghese777@gmail.com | Phone: +91 9747315186 | Location: Alappuzha, Kuttanad, Kerala
+LinkedIn: https://www.linkedin.com/in/alex-c-varghese-038581358/
+GitHub: https://github.com/ALEX2k5-777
+Instagram: https://www.instagram.com/_a.l.e.x__.c.__/
+
+SUMMARY
+Motivated MCA student at Amal Jyothi College of Engineering (BCA Graduate from Saintgits College of Applied Science) with a strong interest in AI and Machine Learning. Possesses hands-on experience in developing and deploying machine learning-based web applications, audio applications, and predictive models.
+
+EDUCATION
+- Amal Jyothi College of Engineering, Kanjirappally: Master of Computer Applications (MCA) [2026 - Present]
+- Saintgits College of Applied Science, Kottayam: Bachelor of Computer Application (BCA) [CGPA: 7.07] (2023 - 2026)
+- St George HSS, Muttar: Higher Secondary Education [83.9%] (2021 - 2023)
+- St George HSS, Muttar: 10th Standard (SSLC) [Full A+] (2020 - 2021)
+
+PROJECTS
+1. VibePlayer (GitHub: https://github.com/ALEX2k5-777/vibeplayer)
+2. Air Quality Index (AQI) Prediction Web App (Akira Software Solutions, Technopark | GitHub: https://github.com/ALEX2k5-777/Air-Quality-Model-)
+3. AGRIGO (Academic AgriTech Platform)
+4. Fly-Vezhambal (GitHub: https://github.com/ALEX2k5-777/fly-vezhambal)
+
+ACHIEVEMENT
+- Winner of i_hack 4.0 Hackathon (College Level)
+
+CERTIFICATIONS
+- Build a Machine Learning Web App with Streamlit & Python (Coursera)
+- Introduction to Artificial Intelligence (IBM)
+- Basics of Python (Infosys Springboard)
+"""
+
+with open("Alex_C_Varghese_Resume.html", "w", encoding="utf-8") as f:
+    f.write(resume_html)
+
+with open("Alex_C_Varghese_Resume.txt", "w", encoding="utf-8") as f:
+    f.write(resume_txt)
+
+print("Resume HTML & TXT updated with 4 projects!")
