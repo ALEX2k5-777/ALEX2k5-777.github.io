@@ -37,8 +37,13 @@
     </div>
   </div>
 
+  <!-- FLOATING BACK-TO-TOP BUTTON -->
+  <button id="back-to-top-btn" title="Back to top" class="fixed bottom-6 right-6 z-50 p-4 rounded-xl bg-[#090d16] border border-[#00FF66]/50 text-[#00FF66] hover:bg-[#00FF66] hover:text-black transition-all shadow-2xl shadow-[#00FF66]/20">
+    <i class="fas fa-[#00FF66] fa-arrow-up text-lg"></i>
+  </button>
+
   <!-- TOP HIGH-DENSITY TICKER / MARQUEE BANNER -->
-  <div class="ticker-wrap font-mono text-sm sm:text-base text-[#00FF66] py-2 z-50 relative border-b border-[#1e293b]">
+  <div class="ticker-wrap font-mono text-sm sm:text-base text-[#00FF66] py-2.5 z-50 relative border-b border-[#1e293b]">
     <div class="ticker">
       <span class="mx-6 font-semibold">● MCA STUDENT @ AMAL JYOTHI COLLEGE (2026 – PRESENT)</span>
       <span class="mx-6 font-semibold">● BCA GRADUATE @ SAINTGITS (2023 – 2026, 7.07 CGPA)</span>
@@ -71,6 +76,7 @@
           <a href="#skills" class="text-slate-300 hover:text-[#00FF66] transition-colors font-medium">//stack</a>
           <a href="#projects" class="text-slate-300 hover:text-[#00FF66] transition-colors font-medium">//projects</a>
           <a href="#education" class="text-slate-300 hover:text-[#00FF66] transition-colors font-medium">//education</a>
+          <a href="#terminal-section" class="text-slate-300 hover:text-[#00FF66] transition-colors font-medium">//terminal</a>
           <a href="#activity-log" class="text-slate-300 hover:text-[#00FF66] transition-colors font-medium">//activity</a>
           <a href="#resume" class="text-slate-300 hover:text-[#00FF66] transition-colors font-medium">//resume</a>
           <a href="#contact" class="text-slate-300 hover:text-[#00FF66] transition-colors font-medium">//contact</a>
@@ -108,6 +114,7 @@
       <a href="#skills" class="block py-2 text-slate-300 hover:text-[#00FF66]">//stack</a>
       <a href="#projects" class="block py-2 text-slate-300 hover:text-[#00FF66]">//projects</a>
       <a href="#education" class="block py-2 text-slate-300 hover:text-[#00FF66]">//education</a>
+      <a href="#terminal-section" class="block py-2 text-slate-300 hover:text-[#00FF66]">//terminal</a>
       <a href="#activity-log" class="block py-2 text-slate-300 hover:text-[#00FF66]">//activity</a>
       <a href="#resume" class="block py-2 text-slate-300 hover:text-[#00FF66]">//resume</a>
       <a href="#contact" class="block py-2 text-slate-300 hover:text-[#00FF66]">//contact</a>
@@ -189,7 +196,7 @@
         <div class="lg:col-span-4 reveal-on-scroll reveal-delay-2">
           <div class="terminal-card rounded-2xl p-6 space-y-5 border border-[#334155]">
             
-            <!-- User Profile Photo Header (TIGHT FACE HEADSHOT CROP OF PROVIDED PHOTO) -->
+            <!-- User Profile Photo Header (TIGHT FACE HEADSHOT CROP) -->
             <div class="flex items-center gap-4 pb-4 border-b border-[#1e293b]">
               <div class="w-20 h-20 rounded-xl bg-[#090d16] border-2 border-[#00FF66]/60 overflow-hidden p-0.5 shrink-0 shadow-lg shadow-[#00FF66]/20">
                 <img src="hero_face.jpg" alt="Alex C Varghese" class="w-full h-full object-cover object-center rounded-lg">
@@ -380,19 +387,37 @@
     </div>
   </section>
 
-  <!-- PROJECTS SHOWCASE SECTION -->
+  <!-- PROJECTS SHOWCASE SECTION WITH INTERACTIVE FILTER TABS -->
   <section id="projects" class="py-24 bg-[#030712] border-t border-[#1e293b]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="flex flex-col items-start mb-12 reveal-on-scroll">
-        <span class="font-mono text-sm text-[#00FF66] font-extrabold uppercase tracking-widest">// 03. FEATURED CODE REPOSITORIES</span>
-        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase mt-2">Highlighted Projects</h2>
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 reveal-on-scroll">
+        <div>
+          <span class="font-mono text-sm text-[#00FF66] font-extrabold uppercase tracking-widest">// 03. FEATURED CODE REPOSITORIES</span>
+          <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase mt-2">Highlighted Projects</h2>
+        </div>
+
+        <!-- Interactive Filter Chips -->
+        <div class="flex flex-wrap items-center gap-2 font-mono text-xs sm:text-sm">
+          <button class="filter-btn active px-4 py-2 rounded-xl bg-[#090d16] border border-[#334155] text-slate-300 font-bold" data-filter="all">
+            [ ALL PROJECTS ]
+          </button>
+          <button class="filter-btn px-4 py-2 rounded-xl bg-[#090d16] border border-[#334155] text-slate-300 font-bold" data-filter="ml">
+            [ AI / ML ]
+          </button>
+          <button class="filter-btn px-4 py-2 rounded-xl bg-[#090d16] border border-[#334155] text-slate-300 font-bold" data-filter="android">
+            [ ANDROID GAME ]
+          </button>
+          <button class="filter-btn px-4 py-2 rounded-xl bg-[#090d16] border border-[#334155] text-slate-300 font-bold" data-filter="media">
+            [ MEDIA & WEB ]
+          </button>
+        </div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         
         <!-- Project 1: VibePlayer -->
-        <div class="terminal-card rounded-2xl p-8 flex flex-col justify-between reveal-on-scroll border-neon-box">
+        <div class="project-card terminal-card rounded-2xl p-8 flex flex-col justify-between reveal-on-scroll border-neon-box" data-category="media">
           <div>
             <div class="flex items-center justify-between mb-4 font-mono text-sm">
               <span class="px-3 py-1.5 rounded-lg bg-[#090d16] border border-[#334155] text-[#00FF66] font-bold">01 // MEDIA APP</span>
@@ -416,7 +441,7 @@
         </div>
 
         <!-- Project 2: AQI Prediction Web App -->
-        <div class="terminal-card rounded-2xl p-8 flex flex-col justify-between reveal-on-scroll reveal-delay-1 border-neon-box">
+        <div class="project-card terminal-card rounded-2xl p-8 flex flex-col justify-between reveal-on-scroll reveal-delay-1 border-neon-box" data-category="ml">
           <div>
             <div class="flex items-center justify-between mb-4 font-mono text-sm">
               <span class="px-3 py-1.5 rounded-lg bg-[#090d16] border border-[#334155] text-cyan-400 font-bold">02 // ML WEB APP</span>
@@ -440,7 +465,7 @@
         </div>
 
         <!-- Project 3: AGRIGO -->
-        <div class="terminal-card rounded-2xl p-8 flex flex-col justify-between reveal-on-scroll reveal-delay-2 border-neon-box">
+        <div class="project-card terminal-card rounded-2xl p-8 flex flex-col justify-between reveal-on-scroll reveal-delay-2 border-neon-box" data-category="media">
           <div>
             <div class="flex items-center justify-between mb-4 font-mono text-sm">
               <span class="px-3 py-1.5 rounded-lg bg-[#090d16] border border-[#334155] text-emerald-400 font-bold">03 // AGRITECH</span>
@@ -462,7 +487,7 @@
         </div>
 
         <!-- Project 4: Fly-Vezhambal -->
-        <div class="terminal-card rounded-2xl p-8 flex flex-col justify-between reveal-on-scroll reveal-delay-3 border-neon-box">
+        <div class="project-card terminal-card rounded-2xl p-8 flex flex-col justify-between reveal-on-scroll reveal-delay-3 border-neon-box" data-category="android">
           <div>
             <div class="flex items-center justify-between mb-4 font-mono text-sm">
               <span class="px-3 py-1.5 rounded-lg bg-[#090d16] border border-[#334155] text-amber-400 font-bold">04 // ANDROID GAME APP</span>
@@ -541,8 +566,79 @@
     </div>
   </section>
 
+  <!-- INTERACTIVE CLI TERMINAL SECTION WITH CLICK CHIPS -->
+  <section id="terminal-section" class="py-24 bg-[#030712] border-t border-[#1e293b]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col items-start mb-12 reveal-on-scroll">
+        <span class="font-mono text-sm text-[#00FF66] font-extrabold uppercase tracking-widest">// 05. INTERACTIVE CLI TERMINAL</span>
+        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase mt-2">Interactive Console</h2>
+      </div>
+
+      <div class="terminal-card max-w-5xl mx-auto rounded-2xl overflow-hidden border border-[#334155] shadow-2xl reveal-on-scroll">
+        
+        <!-- Terminal Header Bar -->
+        <div class="bg-[#090d16] px-6 py-4 border-b border-[#1e293b] flex items-center justify-between font-mono text-sm">
+          <div class="flex items-center gap-2">
+            <span class="w-3.5 h-3.5 rounded-full bg-rose-500 inline-block"></span>
+            <span class="w-3.5 h-3.5 rounded-full bg-amber-500 inline-block"></span>
+            <span class="w-3.5 h-3.5 rounded-full bg-emerald-500 inline-block"></span>
+            <span class="ml-3 text-slate-400 font-semibold">alex@portfolio:~ (zsh)</span>
+          </div>
+          <div class="text-slate-400 text-xs font-semibold hidden sm:block">Interactive Terminal Engine</div>
+        </div>
+
+        <!-- Terminal Body & Output -->
+        <div class="p-6 space-y-4 font-mono text-sm sm:text-base">
+          
+          <div class="text-slate-300 leading-relaxed">
+            Welcome to <span class="text-[#00FF66] font-extrabold">alexcvarghese.dev</span> interactive shell v2.0.<br>
+            Click any command chip below or type <span class="text-[#00FF66] font-bold">help</span> to view all system commands:
+          </div>
+
+          <!-- Clickable Command Quick Chips -->
+          <div class="flex flex-wrap gap-2 pt-1 pb-3 border-b border-[#1e293b]">
+            <button class="term-chip px-3 py-1.5 rounded-lg bg-[#090d16] border border-[#334155] text-[#00FF66] font-bold text-xs hover:bg-[#00FF66] hover:text-black transition-colors" data-cmd="help">
+              help
+            </button>
+            <button class="term-chip px-3 py-1.5 rounded-lg bg-[#090d16] border border-[#334155] text-slate-300 font-bold text-xs hover:bg-[#00FF66] hover:text-black transition-colors" data-cmd="about">
+              about
+            </button>
+            <button class="term-chip px-3 py-1.5 rounded-lg bg-[#090d16] border border-[#334155] text-slate-300 font-bold text-xs hover:bg-[#00FF66] hover:text-black transition-colors" data-cmd="projects">
+              projects
+            </button>
+            <button class="term-chip px-3 py-1.5 rounded-lg bg-[#090d16] border border-[#334155] text-slate-300 font-bold text-xs hover:bg-[#00FF66] hover:text-black transition-colors" data-cmd="education">
+              education
+            </button>
+            <button class="term-chip px-3 py-1.5 rounded-lg bg-[#090d16] border border-[#334155] text-slate-300 font-bold text-xs hover:bg-[#00FF66] hover:text-black transition-colors" data-cmd="skills">
+              skills
+            </button>
+            <button class="term-chip px-3 py-1.5 rounded-lg bg-[#090d16] border border-[#334155] text-slate-300 font-bold text-xs hover:bg-[#00FF66] hover:text-black transition-colors" data-cmd="resume">
+              resume
+            </button>
+            <button class="term-chip px-3 py-1.5 rounded-lg bg-[#090d16] border border-[#334155] text-[#00FF66] font-extrabold text-xs hover:bg-[#00FF66] hover:text-black transition-colors" data-cmd="sudo hire">
+              sudo hire
+            </button>
+          </div>
+
+          <div id="terminal-output" class="max-h-64 overflow-y-auto space-y-2 pr-2"></div>
+
+          <!-- Terminal Input Prompt -->
+          <form id="terminal-form" class="flex items-center gap-2 pt-2">
+            <span class="text-[#00FF66] font-bold">alex@portfolio:~$</span>
+            <input type="text" id="terminal-input" placeholder="Type a command (e.g. help, projects, sudo hire)..." 
+              class="w-full bg-transparent text-white font-mono placeholder-slate-600 focus:outline-none">
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
   <!-- RESUME SECTION -->
-  <section id="resume" class="py-20 bg-[#030712] border-t border-[#1e293b]">
+  <section id="resume" class="py-20 bg-[#090d16] border-t border-[#1e293b]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="terminal-card p-10 rounded-2xl max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 reveal-on-scroll">
@@ -566,11 +662,11 @@
   </section>
 
   <!-- CONTACT & MESSAGE SECTION WITH WEB3FORMS API -->
-  <section id="contact" class="py-24 bg-[#090d16] border-t border-[#1e293b]">
+  <section id="contact" class="py-24 bg-[#030712] border-t border-[#1e293b]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="flex flex-col items-start mb-12 reveal-on-scroll">
-        <span class="font-mono text-sm text-[#00FF66] font-extrabold uppercase tracking-widest">// 05. INITIATE CONNECTION</span>
+        <span class="font-mono text-sm text-[#00FF66] font-extrabold uppercase tracking-widest">// 06. INITIATE CONNECTION</span>
         <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase mt-2">Send Message</h2>
       </div>
 
@@ -648,7 +744,7 @@
   </section>
 
   <!-- PUBLIC GITHUB ACTIVITY LOG WIDGET & FOOTER -->
-  <footer id="activity-log" class="py-20 bg-[#030712] border-t border-[#1e293b]">
+  <footer id="activity-log" class="py-20 bg-[#090d16] border-t border-[#1e293b]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
       
       <!-- REAL-TIME PUBLIC GITHUB ACTIVITY LOG WIDGET -->
@@ -707,6 +803,7 @@
             <li><a href="#skills" class="hover:text-white">//stack</a></li>
             <li><a href="#projects" class="hover:text-white">//projects</a></li>
             <li><a href="#education" class="hover:text-white">//education</a></li>
+            <li><a href="#terminal-section" class="hover:text-white">//terminal</a></li>
             <li><a href="#resume" class="hover:text-white">//resume</a></li>
           </ul>
         </div>

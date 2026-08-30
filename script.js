@@ -1,5 +1,5 @@
 /**
- * Alex C Varghese Cyberpunk Portfolio - Interactive Script
+ * Alex C Varghese Cyberpunk Portfolio - Professional Interactive Script
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initTypewriter();
   initScrollAnimations();
   initTerminal();
+  initProjectFilters();
+  initBackToTop();
   initContactForm();
 });
 
@@ -168,12 +170,13 @@ function initScrollAnimations() {
 }
 
 /* -------------------------------------------------------------
- * 5. Interactive CLI Terminal
+ * 5. Interactive CLI Terminal With Click Chips
  * ------------------------------------------------------------- */
 function initTerminal() {
   const termOutput = document.getElementById('terminal-output');
   const termInput = document.getElementById('terminal-input');
   const termForm = document.getElementById('terminal-form');
+  const termChips = document.querySelectorAll('.term-chip');
 
   if (!termForm || !termInput || !termOutput) return;
 
@@ -271,6 +274,16 @@ Summary: Pursuing MCA (2026–Present) at Amal Jyothi College of Engineering. Co
     e.preventDefault();
     executeCommand(termInput.value);
   });
+
+  termChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      const cmdToRun = chip.getAttribute('data-cmd');
+      if (cmdToRun) {
+        termInput.value = cmdToRun;
+        executeCommand(cmdToRun);
+      }
+    });
+  });
 }
 
 function escapeHTML(str) {
@@ -286,7 +299,56 @@ function escapeHTML(str) {
 }
 
 /* -------------------------------------------------------------
- * 6. Contact Form - Direct Inbox Delivery (Web3Forms API)
+ * 6. Interactive Project Filters
+ * ------------------------------------------------------------- */
+function initProjectFilters() {
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const projectCards = document.querySelectorAll('.project-card');
+
+  if (!filterBtns.length || !projectCards.length) return;
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filterVal = btn.getAttribute('data-filter');
+
+      projectCards.forEach(card => {
+        const cat = card.getAttribute('data-category');
+        if (filterVal === 'all' || cat === filterVal) {
+          card.style.display = 'flex';
+          card.classList.add('revealed');
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+}
+
+/* -------------------------------------------------------------
+ * 7. Back-To-Top Button Observer
+ * ------------------------------------------------------------- */
+function initBackToTop() {
+  const btn = document.getElementById('back-to-top-btn');
+  if (!btn) return;
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) {
+      btn.classList.add('visible');
+    } else {
+      btn.classList.remove('visible');
+    }
+  });
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
+/* -------------------------------------------------------------
+ * 8. Contact Form - Direct Inbox Delivery (Web3Forms API)
  * ------------------------------------------------------------- */
 function initContactForm() {
   const form = document.getElementById('portfolio-contact-form');

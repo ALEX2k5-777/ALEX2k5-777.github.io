@@ -1,11 +1,11 @@
-/* Ultra-Attractive Cyberpunk Terminal Portfolio - Alex C Varghese */
+/* Ultra-Professional Cyberpunk Developer UI/UX - Alex C Varghese */
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
   --bg-pitch-black: #030712;
   --bg-banner: #090d16;
-  --bg-card: rgba(15, 23, 42, 0.75);
+  --bg-card: rgba(15, 23, 42, 0.85);
   --bg-terminal: #070a12;
   --neon-green: #00FF66;
   --neon-cyan: #38bdf8;
@@ -24,7 +24,7 @@ html {
   background-color: var(--bg-pitch-black);
   color: var(--text-primary);
   overflow-x: hidden;
-  font-size: 16px; /* Scaled up base font size */
+  font-size: 16px;
 }
 
 code, pre, .font-mono {
@@ -78,7 +78,7 @@ code, pre, .font-mono {
   width: 100%;
   overflow: hidden;
   background-color: var(--bg-banner);
-  border-bottom: 1px solid rgba(0, 255, 102, 0.2);
+  border-bottom: 1px solid rgba(0, 255, 102, 0.25);
   white-space: nowrap;
 }
 
@@ -86,7 +86,7 @@ code, pre, .font-mono {
   display: inline-block;
   padding-left: 100%;
   animation: ticker 32s linear infinite;
-  font-size: 0.95rem; /* Scaled up ticker text */
+  font-size: 0.95rem;
 }
 
 @keyframes ticker {
@@ -108,16 +108,36 @@ code, pre, .font-mono {
   text-shadow: 0 0 12px rgba(0, 255, 102, 0.7);
 }
 
+/* Polished Interactive Card Styling */
 .border-neon-box {
   border: 1px solid rgba(0, 255, 102, 0.35);
-  background: rgba(15, 23, 42, 0.65);
-  backdrop-filter: blur(16px);
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(20px);
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
 }
+
+.border-neon-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--neon-green), transparent);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
 .border-neon-box:hover {
   border-color: var(--neon-green);
-  transform: translateY(-5px) scale(1.005);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.9), 0 0 30px rgba(0, 255, 102, 0.25);
+  transform: translateY(-6px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.95), 0 0 30px rgba(0, 255, 102, 0.25);
+}
+
+.border-neon-box:hover::before {
+  opacity: 1;
 }
 
 /* Header Scroll Glass Effect */
@@ -127,15 +147,26 @@ code, pre, .font-mono {
 #main-navbar.scrolled {
   background: rgba(3, 7, 18, 0.96);
   backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(0, 255, 102, 0.25);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.9);
+  border-bottom: 1px solid rgba(0, 255, 102, 0.3);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.95);
 }
 
 /* Terminal Box Styling */
 .terminal-card {
   background-color: var(--bg-terminal);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.95), 0 0 35px rgba(0, 255, 102, 0.08);
+}
+
+/* Project Filter Tabs */
+.filter-btn {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.filter-btn.active {
+  background-color: var(--neon-green);
+  color: #000000;
+  font-weight: 800;
+  box-shadow: 0 0 20px rgba(0, 255, 102, 0.4);
 }
 
 /* Scroll Entrance Animations */
@@ -147,36 +178,6 @@ code, pre, .font-mono {
 .reveal-on-scroll.revealed {
   opacity: 1;
   transform: translateY(0) scale(1);
-}
-
-/* Floating Music Player Controls at Bottom Corner */
-#floating-audio-player {
-  background: rgba(7, 10, 18, 0.95);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(0, 255, 102, 0.4);
-  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.95), 0 0 25px rgba(0, 255, 102, 0.25);
-}
-
-/* Audio Visualizer Equalizer Bar Animation */
-.eq-bar {
-  width: 3.5px;
-  background-color: var(--neon-green);
-  border-radius: 2px;
-  animation: eqBounce 1.2s ease-in-out infinite alternate;
-}
-.eq-bar:nth-child(1) { height: 60%; animation-delay: 0.1s; }
-.eq-bar:nth-child(2) { height: 95%; animation-delay: 0.3s; }
-.eq-bar:nth-child(3) { height: 45%; animation-delay: 0.2s; }
-.eq-bar:nth-child(4) { height: 100%; animation-delay: 0.4s; }
-
-@keyframes eqBounce {
-  0% { height: 20%; }
-  100% { height: 100%; }
-}
-
-.paused .eq-bar {
-  animation-play-state: paused;
-  height: 25% !important;
 }
 
 /* Typing Cursor Pulse */
@@ -195,10 +196,21 @@ code, pre, .font-mono {
   50% { opacity: 0; }
 }
 
+/* Floating Back-To-Top Button */
+#back-to-top-btn {
+  transition: all 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+#back-to-top-btn.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 /* Grid overlay background */
 .bg-grid-pattern {
   background-image: 
-    radial-gradient(circle at 50% 0%, rgba(0, 255, 102, 0.1) 0%, transparent 75%),
+    radial-gradient(circle at 50% 0%, rgba(0, 255, 102, 0.12) 0%, transparent 75%),
     linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
   background-size: 100% 100%, 40px 40px, 40px 40px;
