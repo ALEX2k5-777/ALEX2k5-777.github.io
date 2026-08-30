@@ -4,11 +4,12 @@ Email: alexcvarghese777@gmail.com | Phone: +91 9747315186 | Location: Alappuzha,
 LinkedIn: linkedin.com/in/alex-c-varghese-038581358 | GitHub: github.com/ALEX2k5-777 | Instagram: @_a.l.e.x__.c.__
 
 SUMMARY
-Motivated MCA student at Amal Jyothi College of Engineering (BCA Graduate from Saintgits College of Applied Science). Experienced in software & mobile game development, ML web applications, audio media tools, and predictive data models. Strong foundation in Python, C++, Java, data processing, and problem-solving.
+Motivated MCA student at Amal Jyothi College of Engineering (BCA Graduate from Saintgits College of Applied Science). Winner of i_hack 4.0 Hackathon at Saintgits College. Experienced in software & mobile game development, ML web applications, audio media tools, and predictive data models. Strong foundation in Python, C++, Java, data processing, and problem-solving.
 
 EDUCATION
 • Master of Computer Applications (MCA) — Amal Jyothi College of Engineering, Kanjirappally (2026 – Present)
 • Bachelor of Computer Application (BCA) — Saintgits College of Applied Science, Kottayam (2023 – 2026, CGPA: 7.07)
+  [🏆 Winner & 1st Rank Champion — i_hack 4.0 Hackathon]
 • Higher Secondary Education — St George HSS, Muttar (2021 – 2023, Score: 83.9%)
 • 10th Standard (SSLC) — St George HSS, Muttar (2020 – 2021, Score: Full A+)
 
@@ -26,7 +27,7 @@ TECHNICAL SKILLS & ACHIEVEMENTS
 • Programming Languages: Python, Java, C++, JavaScript, HTML5/CSS3
 • Software & Game Dev: Android 2D Game Dev, Streamlit, Predictive Modeling, Weather APIs
 • Soft Skills: Teamwork & Collaboration, Responsibility, Self Learner, Problem Solving
-• Hackathon Achievement: Winner of i_hack 4.0 (College Level)
+• Hackathon Achievement: Winner of i_hack 4.0 @ Saintgits College
 
 CERTIFICATIONS
 • Build a Machine Learning Web App with Streamlit & Python — Coursera

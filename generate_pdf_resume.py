@@ -26,7 +26,7 @@ story.append(Spacer(1, 4))
 story.append(HRFlowable(width="100%", thickness=1, color=colors.HexColor('#cbd5e1'), spaceBefore=2, spaceAfter=4))
 story.append(Paragraph("SUMMARY", heading_style))
 story.append(HRFlowable(width="100%", thickness=1, color=colors.HexColor('#cbd5e1'), spaceBefore=2, spaceAfter=3))
-story.append(Paragraph("Motivated MCA student at Amal Jyothi College of Engineering (BCA Graduate from Saintgits College of Applied Science). Experienced in software & mobile game development, ML web applications, audio media tools, and predictive data models.", body_style))
+story.append(Paragraph("Motivated MCA student at Amal Jyothi College of Engineering (BCA Graduate from Saintgits College of Applied Science). Winner of i_hack 4.0 Hackathon at Saintgits College. Experienced in software & mobile game development, ML web applications, audio media tools, and predictive data models.", body_style))
 story.append(Spacer(1, 4))
 
 story.append(HRFlowable(width="100%", thickness=1, color=colors.HexColor('#cbd5e1'), spaceBefore=2, spaceAfter=4))
@@ -35,7 +35,7 @@ story.append(HRFlowable(width="100%", thickness=1, color=colors.HexColor('#cbd5e
 
 edu_data = [
     [Paragraph("<b>Master of Computer Applications (MCA)</b><br/>Amal Jyothi College of Engineering, Kanjirappally", body_style), Paragraph("<b>2026 – Present</b>", ParagraphStyle('R', parent=body_style, alignment=2))],
-    [Paragraph("<b>Bachelor of Computer Application (BCA)</b> – CGPA: 7.07<br/>Saintgits College of Applied Science, Kottayam", body_style), Paragraph("<b>2023 – 2026</b>", ParagraphStyle('R', parent=body_style, alignment=2))],
+    [Paragraph("<b>Bachelor of Computer Application (BCA)</b> – CGPA: 7.07<br/>Saintgits College of Applied Science, Kottayam<br/>🏆 <i>Winner / 1st Rank Champion — i_hack 4.0 Hackathon</i>", body_style), Paragraph("<b>2023 – 2026</b>", ParagraphStyle('R', parent=body_style, alignment=2))],
     [Paragraph("<b>Higher Secondary Education</b> – Score: 83.9%<br/>St George HSS, Muttar", body_style), Paragraph("<b>2021 – 2023</b>", ParagraphStyle('R', parent=body_style, alignment=2))],
     [Paragraph("<b>10th Standard (SSLC)</b> – Score: Full A+<br/>St George HSS, Muttar", body_style), Paragraph("<b>2020 – 2021</b>", ParagraphStyle('R', parent=body_style, alignment=2))]
 ]
@@ -71,7 +71,7 @@ story.append(HRFlowable(width="100%", thickness=1, color=colors.HexColor('#cbd5e
 story.append(Paragraph("<b>• Programming Languages:</b> Python, Java, C++, JavaScript, HTML5/CSS3", body_style))
 story.append(Paragraph("<b>• Software & Game Dev:</b> Android 2D Game Dev, Streamlit, Predictive Modeling, Weather APIs", body_style))
 story.append(Paragraph("<b>• Soft Skills:</b> Teamwork & Collaboration, Responsibility, Self Learner, Problem Solving", body_style))
-story.append(Paragraph("<b>• Hackathon Achievement:</b> 🏆 <b>Winner of i_hack 4.0</b> (College Level)", body_style))
+story.append(Paragraph("<b>• Hackathon Achievement:</b> 🏆 <b>Winner of i_hack 4.0</b> @ Saintgits College", body_style))
 story.append(Spacer(1, 4))
 
 story.append(HRFlowable(width="100%", thickness=1, color=colors.HexColor('#cbd5e1'), spaceBefore=2, spaceAfter=4))

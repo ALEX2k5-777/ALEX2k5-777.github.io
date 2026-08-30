@@ -109,7 +109,7 @@ function initTypewriter() {
     "Creator of Fly-Vezhambal Android Game",
     "BCA Graduate @ Saintgits (2023 - 2026)",
     "Python & Streamlit Developer",
-    "i_hack 4.0 Hackathon Champion"
+    "i_hack 4.0 Champion @ Saintgits"
   ];
 
   let phraseIdx = 0;
@@ -196,15 +196,15 @@ function initTerminal() {
 <span class="text-neon font-semibold">[PROFILE] Alex C Varghese</span>
 Role: MCA Student (Amal Jyothi College) | BCA Graduate (Saintgits)
 Location: Alappuzha, Kuttanad, Kerala
-Summary: Pursuing MCA (2026–Present) at Amal Jyothi College of Engineering. Completed BCA (2023–2026) from Saintgits College. Creator of VibePlayer, ML AQI Prediction, AGRIGO & Fly-Vezhambal Android Game.
+Summary: Pursuing MCA (2026–Present) at Amal Jyothi College of Engineering. Completed BCA (2023–2026) from Saintgits College. Winner of i_hack 4.0 Hackathon @ Saintgits College. Creator of VibePlayer, ML AQI Prediction, AGRIGO & Fly-Vezhambal Android Game.
 `,
     education: `
 <span class="text-neon font-semibold">[EDUCATION & ACHIEVEMENTS]</span>
 • <span class="text-white font-bold">Amal Jyothi College of Engineering, Kanjirappally</span> - MCA | 2026 – Present
 • <span class="text-slate-300">Saintgits College of Applied Science</span> - BCA (CGPA: 7.07) | 2023 – 2026
+  🏆 <span class="text-neon">Winner of i_hack 4.0 Hackathon (Saintgits College Level)</span>
 • <span class="text-slate-300">St George HSS, Muttar</span> - Higher Secondary (83.9%) | 2021 – 2023
 • <span class="text-slate-300">St George HSS, Muttar</span> - SSLC (Full A+) | 2020 – 2021
-🏆 <span class="text-neon">Winner of i_hack 4.0 Hackathon (College Level)</span>
 `,
     resume: `
 <span class="text-neon font-semibold">[RESUME DOCUMENT]</span>

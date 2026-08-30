@@ -17,6 +17,7 @@ resume_html = """<!DOCTYPE html>
     .job-title { font-weight: bold; color: #0f172a; }
     .institution { font-style: italic; color: #334155; }
     .date { float: right; color: #64748b; font-size: 14px; font-weight: 600; }
+    .award { color: #b45309; font-weight: bold; font-size: 13px; margin-top: 2px; }
     @media print {
       body { margin: 0; padding: 0; }
       .no-print { display: none; }
@@ -41,7 +42,7 @@ resume_html = """<!DOCTYPE html>
 
   <h2>Summary</h2>
   <p>
-    Motivated MCA student at Amal Jyothi College of Engineering (BCA Graduate from Saintgits College of Applied Science). Experienced in software & mobile game development, ML web applications, audio media tools, and predictive data models. Strong foundation in Python, C++, Java, data processing, and problem-solving.
+    Motivated MCA student at Amal Jyothi College of Engineering (BCA Graduate from Saintgits College of Applied Science). Winner of i_hack 4.0 Hackathon at Saintgits College. Experienced in software & mobile game development, ML web applications, audio media tools, and predictive data models. Strong foundation in Python, C++, Java, data processing, and problem-solving.
   </p>
 
   <h2>Education</h2>
@@ -55,6 +56,7 @@ resume_html = """<!DOCTYPE html>
     <span class="date">2023 – 2026 (CGPA: 7.07)</span>
     <div class="job-title">Bachelor of Computer Application (BCA)</div>
     <div class="institution">Saintgits College of Applied Science, Kottayam</div>
+    <div class="award">🏆 Winner & 1st Rank Champion — i_hack 4.0 Hackathon</div>
   </div>
   <br>
   <div>
@@ -104,7 +106,7 @@ resume_html = """<!DOCTYPE html>
     <li><b>Programming Languages:</b> Python, Java, C++, JavaScript, HTML5/CSS3</li>
     <li><b>Software & Game Dev:</b> Android 2D Game Dev, Streamlit, Predictive Modeling, Weather APIs</li>
     <li><b>Soft Skills:</b> Teamwork & Collaboration, Responsibility, Self Learner, Problem Solving</li>
-    <li><b>Hackathon Achievement:</b> 🏆 <b>Winner of i_hack 4.0</b> (College Level)</li>
+    <li><b>Hackathon Achievement:</b> 🏆 <b>Winner of i_hack 4.0</b> @ Saintgits College</li>
   </ul>
 
   <h2>Certifications</h2>
@@ -123,11 +125,12 @@ Email: alexcvarghese777@gmail.com | Phone: +91 9747315186 | Location: Alappuzha,
 LinkedIn: linkedin.com/in/alex-c-varghese-038581358 | GitHub: github.com/ALEX2k5-777 | Instagram: @_a.l.e.x__.c.__
 
 SUMMARY
-Motivated MCA student at Amal Jyothi College of Engineering (BCA Graduate from Saintgits College of Applied Science). Experienced in software & mobile game development, ML web applications, audio media tools, and predictive data models. Strong foundation in Python, C++, Java, data processing, and problem-solving.
+Motivated MCA student at Amal Jyothi College of Engineering (BCA Graduate from Saintgits College of Applied Science). Winner of i_hack 4.0 Hackathon at Saintgits College. Experienced in software & mobile game development, ML web applications, audio media tools, and predictive data models. Strong foundation in Python, C++, Java, data processing, and problem-solving.
 
 EDUCATION
 • Master of Computer Applications (MCA) — Amal Jyothi College of Engineering, Kanjirappally (2026 – Present)
 • Bachelor of Computer Application (BCA) — Saintgits College of Applied Science, Kottayam (2023 – 2026, CGPA: 7.07)
+  [🏆 Winner & 1st Rank Champion — i_hack 4.0 Hackathon]
 • Higher Secondary Education — St George HSS, Muttar (2021 – 2023, Score: 83.9%)
 • 10th Standard (SSLC) — St George HSS, Muttar (2020 – 2021, Score: Full A+)
 
@@ -145,7 +148,7 @@ TECHNICAL SKILLS & ACHIEVEMENTS
 • Programming Languages: Python, Java, C++, JavaScript, HTML5/CSS3
 • Software & Game Dev: Android 2D Game Dev, Streamlit, Predictive Modeling, Weather APIs
 • Soft Skills: Teamwork & Collaboration, Responsibility, Self Learner, Problem Solving
-• Hackathon Achievement: Winner of i_hack 4.0 (College Level)
+• Hackathon Achievement: Winner of i_hack 4.0 @ Saintgits College
 
 CERTIFICATIONS
 • Build a Machine Learning Web App with Streamlit & Python — Coursera
