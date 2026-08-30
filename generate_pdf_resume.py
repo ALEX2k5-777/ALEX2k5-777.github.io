@@ -19,14 +19,14 @@ body_style = ParagraphStyle('BodyStyle', parent=normal, fontName='Helvetica', fo
 bold_style = ParagraphStyle('BoldStyle', parent=normal, fontName='Helvetica-Bold', fontSize=8.5, leading=12, textColor=colors.HexColor('#0f172a'))
 
 story.append(Paragraph("ALEX C VARGHESE", title_style))
-story.append(Paragraph("MCA STUDENT | AI & MACHINE LEARNING DEVELOPER", subtitle_style))
+story.append(Paragraph("MCA STUDENT | SOFTWARE & APPLICATION DEVELOPER", subtitle_style))
 story.append(Paragraph("Email: alexcvarghese777@gmail.com | Phone: +91 9747315186 | Location: Alappuzha, Kuttanad, Kerala<br/>LinkedIn: linkedin.com/in/alex-c-varghese-038581358 | GitHub: github.com/ALEX2k5-777", contact_style))
 story.append(Spacer(1, 4))
 
 story.append(HRFlowable(width="100%", thickness=1, color=colors.HexColor('#cbd5e1'), spaceBefore=2, spaceAfter=4))
 story.append(Paragraph("SUMMARY", heading_style))
 story.append(HRFlowable(width="100%", thickness=1, color=colors.HexColor('#cbd5e1'), spaceBefore=2, spaceAfter=3))
-story.append(Paragraph("Motivated MCA student at Amal Jyothi College of Engineering (BCA Graduate from Saintgits College of Applied Science) with a strong interest in AI and Machine Learning. Possesses hands-on experience in developing and deploying machine learning-based web applications, audio apps, and predictive models.", body_style))
+story.append(Paragraph("Motivated MCA student at Amal Jyothi College of Engineering (BCA Graduate from Saintgits College of Applied Science). Experienced in software & mobile game development, ML web applications, audio media tools, and predictive data models.", body_style))
 story.append(Spacer(1, 4))
 
 story.append(HRFlowable(width="100%", thickness=1, color=colors.HexColor('#cbd5e1'), spaceBefore=2, spaceAfter=4))
@@ -60,8 +60,8 @@ story.append(Spacer(1, 2))
 story.append(Paragraph("<b>3. AGRIGO — Agricultural Management Web App</b>", bold_style))
 story.append(Paragraph("&nbsp;&nbsp;&nbsp;&nbsp;Developed a dynamic agricultural management platform with real-time weather APIs and multi-role authentication.", body_style))
 story.append(Spacer(1, 2))
-story.append(Paragraph("<b>4. Fly-Vezhambal — Web Application</b> (<i>github.com/ALEX2k5-777/fly-vezhambal</i>)", bold_style))
-story.append(Paragraph("&nbsp;&nbsp;&nbsp;&nbsp;Developed an interactive web application featuring custom UI design and responsive web integration.", body_style))
+story.append(Paragraph("<b>4. Fly-Vezhambal — Android 2D Arcade Game App</b> (<i>github.com/ALEX2k5-777/fly-vezhambal</i>)", bold_style))
+story.append(Paragraph("&nbsp;&nbsp;&nbsp;&nbsp;Developed an Android 2D arcade game application inspired by Flappy Bird, featuring custom player physics, collision detection, and high score system.", body_style))
 story.append(Spacer(1, 4))
 
 story.append(HRFlowable(width="100%", thickness=1, color=colors.HexColor('#cbd5e1'), spaceBefore=2, spaceAfter=4))
@@ -69,7 +69,7 @@ story.append(Paragraph("TECHNICAL SKILLS & ACHIEVEMENTS", heading_style))
 story.append(HRFlowable(width="100%", thickness=1, color=colors.HexColor('#cbd5e1'), spaceBefore=2, spaceAfter=3))
 
 story.append(Paragraph("<b>• Programming Languages:</b> Python, Java, C++, JavaScript, HTML5/CSS3", body_style))
-story.append(Paragraph("<b>• AI & Machine Learning:</b> Streamlit, Predictive Modeling, Data Preprocessing, Weather APIs", body_style))
+story.append(Paragraph("<b>• Software & Game Dev:</b> Android 2D Game Dev, Streamlit, Predictive Modeling, Weather APIs", body_style))
 story.append(Paragraph("<b>• Soft Skills:</b> Teamwork & Collaboration, Responsibility, Self Learner, Problem Solving", body_style))
 story.append(Paragraph("<b>• Hackathon Achievement:</b> 🏆 <b>Winner of i_hack 4.0</b> (College Level)", body_style))
 story.append(Spacer(1, 4))
@@ -83,4 +83,4 @@ story.append(Paragraph("• <b>Introduction to Artificial Intelligence (AI)</b> 
 story.append(Paragraph("• <b>Basics of Python</b> — <i>Infosys Springboard</i>", body_style))
 
 doc.build(story)
-print(f"Regenerated {pdf_filename} with 4 projects!")
+print(f"Regenerated {pdf_filename} successfully!")

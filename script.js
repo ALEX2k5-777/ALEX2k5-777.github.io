@@ -56,7 +56,7 @@ function initHeaderMatrixAnimation() {
     height = canvas.height = canvas.parentElement.offsetHeight || 600;
   });
 
-  const chars = "0101010101010101ALEXVARGHESE_AIML_PYTHON_VIBEPLAYER_010101";
+  const chars = "0101010101010101ALEXVARGHESE_PYTHON_VIBEPLAYER_FLAPPY_GAME_010101";
   const charArr = chars.split("");
   const fontSize = 14;
   const columns = Math.floor(width / fontSize);
@@ -104,9 +104,9 @@ function initTypewriter() {
   const phrases = [
     "MCA Student @ Amal Jyothi (2026 - Present)",
     "Creator of VibePlayer Media Player App",
+    "Creator of Fly-Vezhambal Android Game",
     "BCA Graduate @ Saintgits (2023 - 2026)",
-    "AI & Machine Learning Developer",
-    "Python & Streamlit Engineer",
+    "Python & Streamlit Developer",
     "i_hack 4.0 Hackathon Champion"
   ];
 
@@ -193,7 +193,7 @@ function initTerminal() {
 <span class="text-neon font-semibold">[PROFILE] Alex C Varghese</span>
 Role: MCA Student (Amal Jyothi College) | BCA Graduate (Saintgits)
 Location: Alappuzha, Kuttanad, Kerala
-Summary: Pursuing MCA (2026–Present) at Amal Jyothi College of Engineering. Completed BCA (2023–2026) from Saintgits College. Creator of VibePlayer, ML AQI Prediction, AGRIGO & Fly-Vezhambal.
+Summary: Pursuing MCA (2026–Present) at Amal Jyothi College of Engineering. Completed BCA (2023–2026) from Saintgits College. Creator of VibePlayer, ML AQI Prediction, AGRIGO & Fly-Vezhambal Android Game.
 `,
     education: `
 <span class="text-neon font-semibold">[EDUCATION & ACHIEVEMENTS]</span>
@@ -211,7 +211,7 @@ Summary: Pursuing MCA (2026–Present) at Amal Jyothi College of Engineering. Co
     skills: `
 <span class="text-neon font-semibold">[TECH STACK]</span>
 • Languages: Python, Java, C++, JavaScript, HTML5/CSS3
-• AI & ML: Data Preprocessing, Predictive Modeling, Streamlit, Weather APIs, Audio Visualizers
+• Software & Game Dev: Android 2D Game Dev, Predictive Modeling, Streamlit, Weather APIs, Audio Visualizers
 • Core Competencies: Teamwork, Problem Solving, Growth Mindset, Self-Learner
 `,
     projects: `
@@ -222,8 +222,8 @@ Summary: Pursuing MCA (2026–Present) at Amal Jyothi College of Engineering. Co
    - Akira Software Solutions Pvt Ltd (Technopark Trivandrum)
 3. <span class="text-white font-medium">AGRIGO</span> 🌾 (Academic AgriTech Platform)
    - Dynamic Agricultural Management & Weather API integration
-4. <span class="text-white font-medium">Fly-Vezhambal</span> 🕊️ (GitHub: <a href="https://github.com/ALEX2k5-777/fly-vezhambal" target="_blank" class="text-neon underline">fly-vezhambal</a>)
-   - Web application with custom UI & interactive frontend
+4. <span class="text-white font-medium">Fly-Vezhambal</span> 🎮 (GitHub: <a href="https://github.com/ALEX2k5-777/fly-vezhambal" target="_blank" class="text-neon underline">fly-vezhambal</a>)
+   - Android 2D arcade game application inspired by Flappy Bird
 `,
     contact: `
 <span class="text-neon font-semibold">[CONTACT DIRECTORY]</span>
@@ -235,7 +235,7 @@ Summary: Pursuing MCA (2026–Present) at Amal Jyothi College of Engineering. Co
 `,
     'sudo hire': `
 <span class="text-neon font-bold">[ACCESS GRANTED]</span> Initializing recruitment workflow...
-🚀 Alex C Varghese is actively seeking entry-level technical roles in AI, ML, & Software Engineering.
+🚀 Alex C Varghese is actively seeking entry-level technical roles in Software Engineering & Application Development.
 📩 Direct Email: alexcvarghese777@gmail.com | 📲 Phone: +91 9747315186
 `
   };
@@ -286,7 +286,7 @@ function escapeHTML(str) {
 }
 
 /* -------------------------------------------------------------
- * 6. Contact Form - Zero-Config FormSubmit Delivery
+ * 6. Contact Form - Direct Inbox Delivery (Web3Forms API)
  * ------------------------------------------------------------- */
 function initContactForm() {
   const form = document.getElementById('portfolio-contact-form');
@@ -315,37 +315,27 @@ function initContactForm() {
 
     const origText = submitBtn.innerHTML;
     submitBtn.disabled = true;
-    submitBtn.innerHTML = `<i class="fas fa-spinner fa-spin mr-2"></i> Transmitting Message...`;
+    submitBtn.innerHTML = `<i class="fas fa-spinner fa-spin mr-2"></i> Encrypting & Dispatching...`;
 
     showConsoleLog(`[SENDING] Dispatching message from ${name} (${email}) directly to alexcvarghese777@gmail.com...`, 'text-neon');
 
     try {
-      const response = await fetch('https://formsubmit.co/ajax/alexcvarghese777@gmail.com', {
+      const formData = new FormData(form);
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: { 
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify({
-          Name: name,
-          Email: email,
-          Subject: subject || 'Portfolio Inquiry',
-          Message: message
-        })
+        body: formData
       });
 
       const data = await response.json();
 
-      if (response.ok || data.success === "true" || data.success === true) {
+      if (data.success) {
         showConsoleLog(`[SUCCESS 200] Message sent directly to alexcvarghese777@gmail.com!`, 'text-neon');
-        submitBtn.innerHTML = `<i class="fas fa-check-circle mr-2"></i> Sent to alexcvarghese777@gmail.com!`;
+        submitBtn.innerHTML = `<i class="fas fa-check-circle mr-2"></i> Message Sent to Gmail!`;
         form.reset();
       } else {
-        // Fallback to direct mailto
         triggerMailto(name, email, subject, message);
       }
     } catch (err) {
-      // Fallback to direct mailto if network error
       triggerMailto(name, email, subject, message);
     }
 
@@ -359,7 +349,7 @@ function initContactForm() {
     showConsoleLog(`[NOTICE] Opening email draft to alexcvarghese777@gmail.com...`, 'text-cyan-400');
     const mailtoUrl = `mailto:alexcvarghese777@gmail.com?subject=${encodeURIComponent(subject || 'Portfolio Inquiry from ' + name)}&body=${encodeURIComponent("Sender Name: " + name + "\nSender Email: " + email + "\n\nMessage:\n" + message)}`;
     window.location.href = mailtoUrl;
-    if (submitBtn) submitBtn.innerHTML = `<i class="fas fa-paper-plane mr-2"></i> Draft Opened!`;
+    if (submitBtn) submitBtn.innerHTML = `<i class="fas fa-paper-plane mr-2"></i> Sent!`;
   }
 
   function showConsoleLog(msg, colorClass = 'text-slate-300') {
