@@ -20,7 +20,7 @@ bold_style = ParagraphStyle('BoldStyle', parent=normal, fontName='Helvetica-Bold
 
 story.append(Paragraph("ALEX C VARGHESE", title_style))
 story.append(Paragraph("MCA STUDENT | SOFTWARE & APPLICATION DEVELOPER", subtitle_style))
-story.append(Paragraph("Email: alexcvarghese777@gmail.com | Phone: +91 9747315186 | Location: Alappuzha, Kuttanad, Kerala<br/>LinkedIn: linkedin.com/in/alex-c-varghese-038581358 | GitHub: github.com/ALEX2k5-777", contact_style))
+story.append(Paragraph("Email: <a href='mailto:alexcvarghese777@gmail.com' color='#0284c7'>alexcvarghese777@gmail.com</a> | Phone: +91 9747315186 | Location: Alappuzha, Kuttanad, Kerala<br/>LinkedIn: <a href='https://www.linkedin.com/in/alex-c-varghese-038581358/' color='#0284c7'>linkedin.com/in/alex-c-varghese-038581358</a> | GitHub: <a href='https://github.com/ALEX2k5-777' color='#0284c7'>github.com/ALEX2k5-777</a> | Portfolio: <a href='https://alex2k5-777.github.io' color='#0284c7'>alex2k5-777.github.io</a>", contact_style))
 story.append(Spacer(1, 4))
 
 story.append(HRFlowable(width="100%", thickness=1, color=colors.HexColor('#cbd5e1'), spaceBefore=2, spaceAfter=4))
@@ -51,16 +51,16 @@ story.append(HRFlowable(width="100%", thickness=1, color=colors.HexColor('#cbd5e
 story.append(Paragraph("PROJECTS", heading_style))
 story.append(HRFlowable(width="100%", thickness=1, color=colors.HexColor('#cbd5e1'), spaceBefore=2, spaceAfter=3))
 
-story.append(Paragraph("<b>1. VibePlayer — Media & Audio Player Application</b> (<i>github.com/ALEX2k5-777/vibeplayer</i>)", bold_style))
+story.append(Paragraph("<b>1. VibePlayer — Media & Audio Player Application</b> (<a href='https://github.com/ALEX2k5-777/vibeplayer' color='#0284c7'><u>github.com/ALEX2k5-777/vibeplayer</u></a>)", bold_style))
 story.append(Paragraph("&nbsp;&nbsp;&nbsp;&nbsp;Developed a modern audio player with playlist management, custom audio visualizer, and multi-format playback controls.", body_style))
 story.append(Spacer(1, 2))
-story.append(Paragraph("<b>2. Air Quality Index (AQI) Prediction Web App</b> — <i>Akira Software Solutions</i> (<i>github.com/ALEX2k5-777/Air-Quality-Model-</i>)", bold_style))
+story.append(Paragraph("<b>2. Air Quality Index (AQI) Prediction Web App</b> — <i>Akira Software Solutions</i> (<a href='https://github.com/ALEX2k5-777/Air-Quality-Model-' color='#0284c7'><u>github.com/ALEX2k5-777/Air-Quality-Model-</u></a>)", bold_style))
 story.append(Paragraph("&nbsp;&nbsp;&nbsp;&nbsp;Developed an ML web application to predict AQI using Python, data preprocessing, and Streamlit UI.", body_style))
 story.append(Spacer(1, 2))
 story.append(Paragraph("<b>3. AGRIGO — Agricultural Management Web App</b>", bold_style))
 story.append(Paragraph("&nbsp;&nbsp;&nbsp;&nbsp;Developed a dynamic agricultural management platform with real-time weather APIs and multi-role authentication.", body_style))
 story.append(Spacer(1, 2))
-story.append(Paragraph("<b>4. Fly-Vezhambal — Android 2D Arcade Game App</b> (<i>github.com/ALEX2k5-777/fly-vezhambal</i>)", bold_style))
+story.append(Paragraph("<b>4. Fly-Vezhambal — Android 2D Arcade Game App</b> (<a href='https://github.com/ALEX2k5-777/fly-vezhambal' color='#0284c7'><u>github.com/ALEX2k5-777/fly-vezhambal</u></a>)", bold_style))
 story.append(Paragraph("&nbsp;&nbsp;&nbsp;&nbsp;Developed an Android 2D arcade game application inspired by Flappy Bird, featuring custom player physics, collision detection, and high score system.", body_style))
 story.append(Spacer(1, 4))
 
@@ -83,4 +83,4 @@ story.append(Paragraph("• <b>Introduction to Artificial Intelligence (AI)</b> 
 story.append(Paragraph("• <b>Basics of Python</b> — <i>Infosys Springboard</i>", body_style))
 
 doc.build(story)
-print(f"Regenerated {pdf_filename} successfully!")
+print(f"Regenerated {pdf_filename} with active clickable hyperlinks successfully!")
