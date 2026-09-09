@@ -58,7 +58,7 @@ function initHeaderMatrixAnimation() {
     height = canvas.height = canvas.parentElement.offsetHeight || 600;
   });
 
-  const chars = "0101010101010101ALEXVARGHESE_PYTHON_VIBEPLAYER_FLAPPY_GAME_010101";
+  const chars = "0101010101010101ALEXVARGHESE_ALEXAPLAYER_VIBEPLAYER_010101";
   const charArr = chars.split("");
   const fontSize = 14;
   const columns = Math.floor(width / fontSize);
@@ -105,10 +105,11 @@ function initTypewriter() {
 
   const phrases = [
     "MCA Student @ Amal Jyothi (2026 - Present)",
+    "Creator of Alexa Player Smart Audio Analyzer",
     "Creator of VibePlayer Media Player App",
     "Creator of Fly-Vezhambal Android Game",
     "BCA Graduate @ Saintgits (2023 - 2026)",
-    "Python & Streamlit Developer",
+    "Python, Audio MIR & Streamlit Developer",
     "i_hack 4.0 Champion @ Saintgits"
   ];
 
@@ -184,7 +185,7 @@ function initTerminal() {
     help: `
 <span class="text-neon font-bold">AVAILABLE COMMANDS:</span>
   <span class="text-white">about</span>      - Executive overview of Alex C Varghese
-  <span class="text-white">projects</span>   - VibePlayer, AQI Model, AGRIGO & Fly-Vezhambal
+  <span class="text-white">projects</span>   - Alexa Player, VibePlayer, AQI Model, AGRIGO & Fly-Vezhambal
   <span class="text-white">education</span>  - MCA (2026-Present) & BCA (2023-2026) timeline
   <span class="text-white">resume</span>     - Download official CV / Resume PDF
   <span class="text-white">skills</span>     - Core programming languages & technical stack
@@ -196,7 +197,7 @@ function initTerminal() {
 <span class="text-neon font-semibold">[PROFILE] Alex C Varghese</span>
 Role: MCA Student (Amal Jyothi College) | BCA Graduate (Saintgits)
 Location: Alappuzha, Kuttanad, Kerala
-Summary: Pursuing MCA (2026–Present) at Amal Jyothi College of Engineering. Completed BCA (2023–2026) from Saintgits College. Winner of i_hack 4.0 Hackathon @ Saintgits College. Creator of VibePlayer, ML AQI Prediction, AGRIGO & Fly-Vezhambal Android Game.
+Summary: Pursuing MCA (2026–Present) at Amal Jyothi College of Engineering. Completed BCA (2023–2026) from Saintgits College. Winner of i_hack 4.0 Hackathon @ Saintgits College. Creator of Alexa Player, VibePlayer, ML AQI Prediction, AGRIGO & Fly-Vezhambal Android Game.
 `,
     education: `
 <span class="text-neon font-semibold">[EDUCATION & ACHIEVEMENTS]</span>
@@ -213,19 +214,21 @@ Summary: Pursuing MCA (2026–Present) at Amal Jyothi College of Engineering. Co
 `,
     skills: `
 <span class="text-neon font-semibold">[TECH STACK]</span>
-• Languages: Python, Java, C++, JavaScript, HTML5/CSS3
-• Software & Game Dev: Android 2D Game Dev, Predictive Modeling, Streamlit, Weather APIs, Audio Visualizers
+• Languages: Python 3.12, Java, C++, JavaScript, HTML5/CSS3
+• Software, Audio & Game Dev: Audio MIR (Librosa, CQT), Web Audio 4096-FFT, Android 2D Game Dev, Streamlit, Predictive Modeling
 • Core Competencies: Teamwork, Problem Solving, Growth Mindset, Self-Learner
 `,
     projects: `
 <span class="text-neon font-semibold">[FEATURED PROJECTS]</span>
-1. <span class="text-white font-medium">VibePlayer</span> 🎵 (GitHub: <a href="https://github.com/ALEX2k5-777/vibeplayer" target="_blank" class="text-neon underline">vibeplayer</a>)
+1. <span class="text-white font-medium">Alexa Player</span> 🎹 (GitHub: <a href="https://github.com/ALEX2k5-777/alexa-player" target="_blank" class="text-neon underline">alexa-player</a>)
+   - Smart Audio Analyzer & 3D Virtual Piano Keyboard Guide (BPM, Time Sig, CQT Chords)
+2. <span class="text-white font-medium">VibePlayer</span> 🎵 (GitHub: <a href="https://github.com/ALEX2k5-777/vibeplayer" target="_blank" class="text-neon underline">vibeplayer</a>)
    - Modern Audio & Media Player Application with visualizer
-2. <span class="text-white font-medium">Air Quality Index (AQI) Prediction App</span> 🍃 (GitHub: <a href="https://github.com/ALEX2k5-777/Air-Quality-Model-" target="_blank" class="text-neon underline">Air-Quality-Model-</a>)
+3. <span class="text-white font-medium">Air Quality Index (AQI) Prediction App</span> 🍃 (GitHub: <a href="https://github.com/ALEX2k5-777/Air-Quality-Model-" target="_blank" class="text-neon underline">Air-Quality-Model-</a>)
    - Akira Software Solutions Pvt Ltd (Technopark Trivandrum)
-3. <span class="text-white font-medium">AGRIGO</span> 🌾 (Academic AgriTech Platform)
+4. <span class="text-white font-medium">AGRIGO</span> 🌾 (Academic AgriTech Platform)
    - Dynamic Agricultural Management & Weather API integration
-4. <span class="text-white font-medium">Fly-Vezhambal</span> 🎮 (GitHub: <a href="https://github.com/ALEX2k5-777/fly-vezhambal" target="_blank" class="text-neon underline">fly-vezhambal</a>)
+5. <span class="text-white font-medium">Fly-Vezhambal</span> 🎮 (GitHub: <a href="https://github.com/ALEX2k5-777/fly-vezhambal" target="_blank" class="text-neon underline">fly-vezhambal</a>)
    - Android 2D arcade game application inspired by Flappy Bird
 `,
     contact: `

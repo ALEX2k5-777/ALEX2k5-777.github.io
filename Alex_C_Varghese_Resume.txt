@@ -1,10 +1,10 @@
 ALEX C VARGHESE
 MCA STUDENT | SOFTWARE & APPLICATION DEVELOPER
 Email: alexcvarghese777@gmail.com | Phone: +91 9747315186 | Location: Alappuzha, Kuttanad, Kerala
-LinkedIn: linkedin.com/in/alex-c-varghese-038581358 | GitHub: github.com/ALEX2k5-777 | Instagram: @_a.l.e.x__.c.__
+LinkedIn: linkedin.com/in/alex-c-varghese-038581358 | GitHub: github.com/ALEX2k5-777 | Portfolio: alex2k5-777.github.io
 
 SUMMARY
-Motivated MCA student at Amal Jyothi College of Engineering (BCA Graduate from Saintgits College of Applied Science). Winner of i_hack 4.0 Hackathon at Saintgits College. Experienced in software & mobile game development, ML web applications, audio media tools, and predictive data models. Strong foundation in Python, C++, Java, data processing, and problem-solving.
+Motivated MCA student at Amal Jyothi College of Engineering (BCA Graduate from Saintgits College of Applied Science). Winner of i_hack 4.0 Hackathon at Saintgits College. Experienced in software & mobile game development, audio MIR tools, ML web applications, and predictive data models. Strong foundation in Python, C++, Java, JavaScript, and Web Audio APIs.
 
 EDUCATION
 • Master of Computer Applications (MCA) — Amal Jyothi College of Engineering, Kanjirappally (2026 – Present)
@@ -14,18 +14,20 @@ EDUCATION
 • 10th Standard (SSLC) — St George HSS, Muttar (2020 – 2021, Score: Full A+)
 
 PROJECTS
-1. VibePlayer — Media & Audio Player Application (github.com/ALEX2k5-777/vibeplayer)
+1. Alexa Player — Smart Audio Analyzer & Beginner Keyboard Guide (github.com/ALEX2k5-777/alexa-player)
+   - Developed an intelligent audio MIR web app that extracts song BPM, time signature, and chord progressions with a 3D interactive virtual piano keyboard visualizer.
+2. VibePlayer — Media & Audio Player Application (github.com/ALEX2k5-777/vibeplayer)
    - Developed a modern audio player with playlist management, custom audio visualizer, and multi-format playback controls.
-2. Air Quality Index (AQI) Prediction Web App — Akira Software Solutions (github.com/ALEX2k5-777/Air-Quality-Model-)
+3. Air Quality Index (AQI) Prediction Web App — Akira Software Solutions (github.com/ALEX2k5-777/Air-Quality-Model-)
    - Developed an ML web application to predict AQI using Python, data preprocessing, and Streamlit UI.
-3. AGRIGO — Agricultural Management Web App
+4. AGRIGO — Agricultural Management Web App
    - Developed a dynamic agricultural management platform with real-time weather APIs and secure multi-role authentication.
-4. Fly-Vezhambal — Android 2D Arcade Game App (github.com/ALEX2k5-777/fly-vezhambal)
+5. Fly-Vezhambal — Android 2D Arcade Game App (github.com/ALEX2k5-777/fly-vezhambal)
    - Developed an Android 2D arcade game application inspired by Flappy Bird, featuring custom player flight physics, collision detection, and high score system.
 
 TECHNICAL SKILLS & ACHIEVEMENTS
 • Programming Languages: Python, Java, C++, JavaScript, HTML5/CSS3
-• Software & Game Dev: Android 2D Game Dev, Streamlit, Predictive Modeling, Weather APIs
+• Software & Game Dev: Audio MIR & DSP (Librosa, Web Audio API), Android 2D Game Dev, Streamlit, Predictive Modeling
 • Soft Skills: Teamwork & Collaboration, Responsibility, Self Learner, Problem Solving
 • Hackathon Achievement: Winner of i_hack 4.0 @ Saintgits College
 

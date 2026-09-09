@@ -1,4 +1,4 @@
-# Python script to generate resume files with 4 distinct projects (VibePlayer, AQI Model, AGRIGO, Fly-Vezhambal)
+# Python script to generate resume files with 5 distinct projects (Alexa Player, VibePlayer, AQI Model, AGRIGO, Fly-Vezhambal)
 
 resume_html = """<!DOCTYPE html>
 <html lang="en">
@@ -34,15 +34,15 @@ resume_html = """<!DOCTYPE html>
   <h1>ALEX C VARGHESE</h1>
   <div class="subtitle">MCA STUDENT | SOFTWARE & APPLICATION DEVELOPER</div>
   <div class="contact-info">
-    📧 alexcvarghese777@gmail.com | 📞 +91 9747315186 | 📍 Alappuzha, Kuttanad, Kerala<br>
+    📧 <a href="mailto:alexcvarghese777@gmail.com">alexcvarghese777@gmail.com</a> | 📞 +91 9747315186 | 📍 Alappuzha, Kuttanad, Kerala<br>
     🔗 LinkedIn: <a href="https://www.linkedin.com/in/alex-c-varghese-038581358/" target="_blank">alex-c-varghese-038581358</a> | 
     💻 GitHub: <a href="https://github.com/ALEX2k5-777" target="_blank">ALEX2k5-777</a> | 
-    📷 Instagram: @_a.l.e.x__.c.__
+    🌐 Portfolio: <a href="https://alex2k5-777.github.io" target="_blank">alex2k5-777.github.io</a>
   </div>
 
   <h2>Summary</h2>
   <p>
-    Motivated MCA student at Amal Jyothi College of Engineering (BCA Graduate from Saintgits College of Applied Science). Winner of i_hack 4.0 Hackathon at Saintgits College. Experienced in software & mobile game development, ML web applications, audio media tools, and predictive data models. Strong foundation in Python, C++, Java, data processing, and problem-solving.
+    Motivated MCA student at Amal Jyothi College of Engineering (BCA Graduate from Saintgits College of Applied Science). Winner of i_hack 4.0 Hackathon at Saintgits College. Experienced in software & mobile game development, audio MIR processing, ML web applications, and predictive data models. Strong foundation in Python, C++, Java, JavaScript, and Web Audio APIs.
   </p>
 
   <h2>Education</h2>
@@ -73,28 +73,35 @@ resume_html = """<!DOCTYPE html>
 
   <h2>Projects</h2>
   <div>
-    <div class="job-title">1. VibePlayer — Media & Audio Player Application</div>
+    <div class="job-title">1. Alexa Player — Smart Audio Analyzer & Beginner Keyboard Guide 🎹</div>
+    <div class="institution">GitHub: <a href="https://github.com/ALEX2k5-777/alexa-player" target="_blank">github.com/ALEX2k5-777/alexa-player</a></div>
+    <ul>
+      <li>Developed an intelligent audio MIR web app that extracts song BPM, time signature, and chord progressions with a 3D interactive virtual piano keyboard visualizer highlighting key fingerings in real time.</li>
+    </ul>
+  </div>
+  <div>
+    <div class="job-title">2. VibePlayer — Media & Audio Player Application 🎵</div>
     <div class="institution">GitHub: <a href="https://github.com/ALEX2k5-777/vibeplayer" target="_blank">github.com/ALEX2k5-777/vibeplayer</a></div>
     <ul>
       <li>Developed a modern audio and media player application designed for seamless playback, playlist organization, and custom audio visualizer controls.</li>
     </ul>
   </div>
   <div>
-    <div class="job-title">2. Air Quality Index (AQI) Prediction Web App</div>
+    <div class="job-title">3. Air Quality Index (AQI) Prediction Web App 🍃</div>
     <div class="institution">Akira Software Solutions Pvt Ltd, Technopark - Trivandrum | GitHub: <a href="https://github.com/ALEX2k5-777/Air-Quality-Model-" target="_blank">github.com/ALEX2k5-777/Air-Quality-Model-</a></div>
     <ul>
       <li>Developed a machine learning web application to predict Air Quality Index. Implemented data preprocessing, model training, and integration with a Streamlit interface.</li>
     </ul>
   </div>
   <div>
-    <div class="job-title">3. AGRIGO — Agricultural Management Web App</div>
+    <div class="job-title">4. AGRIGO — Agricultural Management Web App 🌾</div>
     <div class="institution">Academic / Custom AgriTech Platform</div>
     <ul>
       <li>Developed a dynamic agricultural management platform to help farmers track field data and optimize irrigation practices with real-time weather APIs and secure multi-role auth.</li>
     </ul>
   </div>
   <div>
-    <div class="job-title">4. Fly-Vezhambal — Android 2D Arcade Game App</div>
+    <div class="job-title">5. Fly-Vezhambal — Android 2D Arcade Game App 🎮</div>
     <div class="institution">GitHub: <a href="https://github.com/ALEX2k5-777/fly-vezhambal" target="_blank">github.com/ALEX2k5-777/fly-vezhambal</a></div>
     <ul>
       <li>Developed an Android 2D arcade game application inspired by Flappy Bird, featuring custom player flight physics, collision detection, and high score system.</li>
@@ -104,7 +111,7 @@ resume_html = """<!DOCTYPE html>
   <h2>Technical Skills & Achievements</h2>
   <ul>
     <li><b>Programming Languages:</b> Python, Java, C++, JavaScript, HTML5/CSS3</li>
-    <li><b>Software & Game Dev:</b> Android 2D Game Dev, Streamlit, Predictive Modeling, Weather APIs</li>
+    <li><b>Software & Game Dev:</b> Audio MIR & DSP (Librosa, Web Audio API), Android 2D Game Dev, Streamlit, Predictive Modeling</li>
     <li><b>Soft Skills:</b> Teamwork & Collaboration, Responsibility, Self Learner, Problem Solving</li>
     <li><b>Hackathon Achievement:</b> 🏆 <b>Winner of i_hack 4.0</b> @ Saintgits College</li>
   </ul>
@@ -122,10 +129,10 @@ resume_html = """<!DOCTYPE html>
 resume_txt = """ALEX C VARGHESE
 MCA STUDENT | SOFTWARE & APPLICATION DEVELOPER
 Email: alexcvarghese777@gmail.com | Phone: +91 9747315186 | Location: Alappuzha, Kuttanad, Kerala
-LinkedIn: linkedin.com/in/alex-c-varghese-038581358 | GitHub: github.com/ALEX2k5-777 | Instagram: @_a.l.e.x__.c.__
+LinkedIn: linkedin.com/in/alex-c-varghese-038581358 | GitHub: github.com/ALEX2k5-777 | Portfolio: alex2k5-777.github.io
 
 SUMMARY
-Motivated MCA student at Amal Jyothi College of Engineering (BCA Graduate from Saintgits College of Applied Science). Winner of i_hack 4.0 Hackathon at Saintgits College. Experienced in software & mobile game development, ML web applications, audio media tools, and predictive data models. Strong foundation in Python, C++, Java, data processing, and problem-solving.
+Motivated MCA student at Amal Jyothi College of Engineering (BCA Graduate from Saintgits College of Applied Science). Winner of i_hack 4.0 Hackathon at Saintgits College. Experienced in software & mobile game development, audio MIR tools, ML web applications, and predictive data models. Strong foundation in Python, C++, Java, JavaScript, and Web Audio APIs.
 
 EDUCATION
 • Master of Computer Applications (MCA) — Amal Jyothi College of Engineering, Kanjirappally (2026 – Present)
@@ -135,18 +142,20 @@ EDUCATION
 • 10th Standard (SSLC) — St George HSS, Muttar (2020 – 2021, Score: Full A+)
 
 PROJECTS
-1. VibePlayer — Media & Audio Player Application (github.com/ALEX2k5-777/vibeplayer)
+1. Alexa Player — Smart Audio Analyzer & Beginner Keyboard Guide (github.com/ALEX2k5-777/alexa-player)
+   - Developed an intelligent audio MIR web app that extracts song BPM, time signature, and chord progressions with a 3D interactive virtual piano keyboard visualizer.
+2. VibePlayer — Media & Audio Player Application (github.com/ALEX2k5-777/vibeplayer)
    - Developed a modern audio player with playlist management, custom audio visualizer, and multi-format playback controls.
-2. Air Quality Index (AQI) Prediction Web App — Akira Software Solutions (github.com/ALEX2k5-777/Air-Quality-Model-)
+3. Air Quality Index (AQI) Prediction Web App — Akira Software Solutions (github.com/ALEX2k5-777/Air-Quality-Model-)
    - Developed an ML web application to predict AQI using Python, data preprocessing, and Streamlit UI.
-3. AGRIGO — Agricultural Management Web App
+4. AGRIGO — Agricultural Management Web App
    - Developed a dynamic agricultural management platform with real-time weather APIs and secure multi-role authentication.
-4. Fly-Vezhambal — Android 2D Arcade Game App (github.com/ALEX2k5-777/fly-vezhambal)
+5. Fly-Vezhambal — Android 2D Arcade Game App (github.com/ALEX2k5-777/fly-vezhambal)
    - Developed an Android 2D arcade game application inspired by Flappy Bird, featuring custom player flight physics, collision detection, and high score system.
 
 TECHNICAL SKILLS & ACHIEVEMENTS
 • Programming Languages: Python, Java, C++, JavaScript, HTML5/CSS3
-• Software & Game Dev: Android 2D Game Dev, Streamlit, Predictive Modeling, Weather APIs
+• Software & Game Dev: Audio MIR & DSP (Librosa, Web Audio API), Android 2D Game Dev, Streamlit, Predictive Modeling
 • Soft Skills: Teamwork & Collaboration, Responsibility, Self Learner, Problem Solving
 • Hackathon Achievement: Winner of i_hack 4.0 @ Saintgits College
 
@@ -162,4 +171,4 @@ with open("Alex_C_Varghese_Resume.html", "w", encoding="utf-8") as f:
 with open("Alex_C_Varghese_Resume.txt", "w", encoding="utf-8") as f:
     f.write(resume_txt)
 
-print("Generated Alex_C_Varghese_Resume.html and Alex_C_Varghese_Resume.txt successfully!")
+print("Generated Alex_C_Varghese_Resume.html and Alex_C_Varghese_Resume.txt with Alexa Player successfully!")
