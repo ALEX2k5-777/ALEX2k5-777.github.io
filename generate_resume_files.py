@@ -122,6 +122,12 @@ resume_html = """<!DOCTYPE html>
     <li><b>Introduction to Artificial Intelligence (AI)</b> — <i>IBM</i></li>
     <li><b>Basics of Python</b> — <i>Infosys Springboard</i></li>
   </ul>
+
+  <h2>Creative Pursuits & Differentiators</h2>
+  <ul>
+    <li><b>Music:</b> Keyboardist & Cajón / Clapbox acoustic percussionist (inspired the architecture of <i>Alexa Player</i> and <i>VibePlayer</i> audio systems).</li>
+    <li><b>Photography:</b> Landscape, portrait & visual storyteller (<a href="https://www.instagram.com/click_by_alex/" target="_blank">@click_by_alex</a>).</li>
+  </ul>
 </body>
 </html>
 """
@@ -163,6 +169,10 @@ CERTIFICATIONS
 • Build a Machine Learning Web App with Streamlit & Python — Coursera
 • Introduction to Artificial Intelligence (AI) — IBM
 • Basics of Python — Infosys Springboard
+
+CREATIVE PURSUITS & EXTRACURRICULAR
+• Music: Keyboardist & Cajón / Clapbox percussionist (inspired the development of Alexa Player audio tools)
+• Photography: Landscape, nature & visual storyteller (Instagram: @click_by_alex)
 """
 
 with open("Alex_C_Varghese_Resume.html", "w", encoding="utf-8") as f:

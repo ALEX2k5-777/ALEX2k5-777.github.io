@@ -160,6 +160,7 @@ function initTypewriter() {
   const phrases = [
     "MCA Student @ Amal Jyothi College (2026 – Present)",
     "Creator of Alexa Player — Audio MIR & 3D Piano Guide",
+    "Keyboardist, Cajón Percussionist & Photographer",
     "BCA Graduate from Saintgits College (CGPA: 7.07)",
     "Winner of i_hack 4.0 Hackathon @ Saintgits",
     "Machine Learning & Application Developer"
@@ -238,6 +239,7 @@ function initConsole() {
 <div class="text-zinc-400 space-y-1">
   <div><span class="text-blue-400 font-semibold">about</span>      - Executive background of Alex C Varghese</div>
   <div><span class="text-blue-400 font-semibold">projects</span>   - Featured applications & repositories</div>
+  <div><span class="text-blue-400 font-semibold">creative</span>   - Music (Keyboard, Cajón) & Photography</div>
   <div><span class="text-blue-400 font-semibold">education</span>  - Academic timeline (MCA & BCA)</div>
   <div><span class="text-blue-400 font-semibold">skills</span>     - Programming languages & technical tools</div>
   <div><span class="text-blue-400 font-semibold">resume</span>     - Official CV download link</div>
@@ -252,6 +254,14 @@ function initConsole() {
   <div>• Background: BCA Graduate (Saintgits College, CGPA: 7.07)</div>
   <div>• Location: Alappuzha, Kerala, India</div>
   <div>• Recognition: 🏆 1st Rank Champion — i_hack 4.0 Hackathon @ Saintgits</div>
+  <div>• Creative: Keyboardist, Cajón Percussionist & Visual Storyteller (@click_by_alex)</div>
+</div>
+`,
+    creative: `
+<div class="text-zinc-300 space-y-2">
+  <div class="text-white font-semibold">Creative Pursuits — Beyond Code</div>
+  <div>🎹 <strong class="text-indigo-400">Music:</strong> Keyboardist & Cajón / Clapbox acoustic percussionist. Musical timing, scales, and chord progressions directly inspired the development of <em>Alexa Player</em> and <em>VibePlayer</em>.</div>
+  <div>📷 <strong class="text-rose-400">Photography:</strong> Landscape, portrait, and visual storytelling. Follow on Instagram: <a href="https://www.instagram.com/click_by_alex/" target="_blank" class="text-rose-400 underline">@click_by_alex</a></div>
 </div>
 `,
     education: `
