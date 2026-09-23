@@ -3,105 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>alexcvarghese.dev | Software Developer | Portfolio</title>
+  <title>Alex C Varghese | Software & Application Developer</title>
+  
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <!-- Custom Stylesheet -->
+  
+  <!-- Custom Modern Stylesheet -->
   <link rel="stylesheet" href="styles.css">
+  
   <script>
     tailwind.config = {
       darkMode: 'class',
       theme: {
         extend: {
           colors: {
-            pitch: '#030712',
-            neon: '#00FF66',
-            banner: '#090d16',
-            muted: '#94a3b8',
-            card: '#0f172a'
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+            }
           }
         }
       }
     }
   </script>
 </head>
-<body class="bg-[#030712] text-slate-100 bg-grid-pattern selection:bg-[#00FF66] selection:text-black relative min-h-screen">
-
-  <!-- FLOATING VERTICAL EDGE BADGE (Nominee / Winner Badge) -->
-  <div class="fixed top-1/3 right-0 z-40 hidden lg:flex items-center gap-3 px-4 py-5 bg-[#090d16] border-l-2 border-y border-[#1e293b] border-l-[#00FF66] rounded-l-2xl shadow-2xl">
-    <div class="vertical-badge font-mono text-sm tracking-widest text-[#00FF66] font-extrabold uppercase flex items-center gap-3">
-      <span>i_HACK 4.0 WINNER @ SAINTGITS • HACKATHON CHAMPION</span>
-      <span class="text-amber-400 text-lg">🏆</span>
-    </div>
-  </div>
+<body class="bg-ambient-mesh text-zinc-100 antialiased selection:bg-blue-500/20 selection:text-blue-200 min-h-screen">
 
   <!-- FLOATING BACK-TO-TOP BUTTON -->
-  <button id="back-to-top-btn" title="Back to top" class="fixed bottom-6 right-6 z-50 p-4 rounded-xl bg-[#090d16] border border-[#00FF66]/50 text-[#00FF66] hover:bg-[#00FF66] hover:text-black transition-all shadow-2xl shadow-[#00FF66]/20">
-    <i class="fas fa-[#00FF66] fa-arrow-up text-lg"></i>
+  <button id="back-to-top-btn" title="Back to top" class="fixed bottom-6 right-6 z-50 p-3.5 rounded-xl bg-zinc-900/90 border border-zinc-700/60 text-zinc-300 hover:text-white shadow-xl backdrop-blur-md">
+    <i class="fas fa-arrow-up text-sm"></i>
   </button>
 
-  <!-- TOP HIGH-DENSITY TICKER / MARQUEE BANNER -->
-  <div class="ticker-wrap font-mono text-sm sm:text-base text-[#00FF66] py-2.5 z-50 relative border-b border-[#1e293b]">
-    <div class="ticker">
-      <span class="mx-6 font-semibold">● MCA STUDENT @ AMAL JYOTHI COLLEGE (2026 – PRESENT)</span>
-      <span class="mx-6 font-semibold">● BCA GRADUATE @ SAINTGITS (2023 – 2026, 7.07 CGPA)</span>
-      <span class="mx-6 text-white font-semibold">● CREATOR OF ALEXA PLAYER, VIBEPLAYER, AQI MODEL, AGRIGO & FLY-VEZHAMBAL</span>
-      <span class="mx-6 font-semibold">● i_HACK 4.0 CHAMPION @ SAINTGITS</span>
-      <span class="mx-6 text-white font-semibold">● AVAILABLE FOR TECHNICAL ROLES & INTERNSHIPS</span>
-      <span class="mx-6 font-semibold">● GITHUB: @ALEX2k5-777</span>
-      <span class="mx-6 font-semibold">● MCA STUDENT @ AMAL JYOTHI COLLEGE (2026 – PRESENT)</span>
+  <!-- TOP MINIMALIST ANNOUNCEMENT BAR -->
+  <div class="border-b border-zinc-800/80 bg-zinc-950/70 backdrop-blur-md py-2.5 px-4 text-xs sm:text-sm text-center text-zinc-400">
+    <div class="max-w-7xl mx-auto flex items-center justify-center gap-2 flex-wrap">
+      <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 font-medium">
+        <span class="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse"></span> Available for Roles & Internships
+      </span>
+      <span class="hidden sm:inline text-zinc-600">•</span>
+      <span>MCA @ Amal Jyothi College (2026–Present)</span>
+      <span class="hidden sm:inline text-zinc-600">•</span>
+      <span class="text-zinc-300">🏆 i_hack 4.0 Champion @ Saintgits</span>
     </div>
   </div>
 
-  <!-- MINIMALIST HEADER & NAVBAR -->
-  <header id="main-navbar" class="sticky top-0 left-0 right-0 z-40 bg-[#030712]/95 backdrop-blur-xl border-b border-[#1e293b]">
+  <!-- MODERN MINIMALIST NAVBAR -->
+  <header id="main-navbar" class="sticky top-0 left-0 right-0 z-40 bg-zinc-950/70 backdrop-blur-xl border-b border-zinc-800/50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20 sm:h-24">
+      <div class="flex items-center justify-between h-16 sm:h-20">
         
-        <!-- Sharp Monospaced Logo -->
-        <a href="#hero" class="flex items-center gap-3.5 group">
-          <div class="w-10 h-10 rounded-xl bg-[#090d16] border border-[#334155] flex items-center justify-center font-mono font-bold text-sm text-[#00FF66] group-hover:border-[#00FF66] transition-colors shadow-lg">
-            &gt;_
+        <!-- Clean Modern Brand Identity -->
+        <a href="#hero" class="flex items-center gap-3 group">
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center font-bold text-white text-sm shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform">
+            AV
           </div>
-          <span class="font-mono font-extrabold text-xl sm:text-2xl text-white tracking-tight">
-            alexcvarghese<span class="text-[#00FF66]">.dev</span>
+          <span class="font-semibold text-lg sm:text-xl text-zinc-100 tracking-tight group-hover:text-white transition-colors">
+            Alex C Varghese
           </span>
         </a>
 
         <!-- Desktop Navigation Links -->
-        <nav class="hidden md:flex items-center gap-8 font-mono text-sm lg:text-base">
-          <a href="#about" class="text-slate-300 hover:text-[#00FF66] transition-colors font-medium">//about</a>
-          <a href="#skills" class="text-slate-300 hover:text-[#00FF66] transition-colors font-medium">//stack</a>
-          <a href="#projects" class="text-slate-300 hover:text-[#00FF66] transition-colors font-medium">//projects</a>
-          <a href="#education" class="text-slate-300 hover:text-[#00FF66] transition-colors font-medium">//education</a>
-          <a href="#terminal-section" class="text-slate-300 hover:text-[#00FF66] transition-colors font-medium">//terminal</a>
-          <a href="#activity-log" class="text-slate-300 hover:text-[#00FF66] transition-colors font-medium">//activity</a>
-          <a href="#resume" class="text-slate-300 hover:text-[#00FF66] transition-colors font-medium">//resume</a>
-          <a href="#contact" class="text-slate-300 hover:text-[#00FF66] transition-colors font-medium">//contact</a>
+        <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-zinc-400">
+          <a href="#about" class="hover:text-zinc-100 transition-colors">About</a>
+          <a href="#skills" class="hover:text-zinc-100 transition-colors">Skills</a>
+          <a href="#projects" class="hover:text-zinc-100 transition-colors">Projects</a>
+          <a href="#education" class="hover:text-zinc-100 transition-colors">Education</a>
+          <a href="#console-section" class="hover:text-zinc-100 transition-colors">Console</a>
+          <a href="#resume" class="hover:text-zinc-100 transition-colors">Resume</a>
+          <a href="#contact" class="hover:text-zinc-100 transition-colors">Contact</a>
         </nav>
 
-        <!-- Right Header Status & Language Switcher -->
-        <div class="hidden sm:flex items-center gap-4 font-mono text-xs sm:text-sm">
-          <!-- Language Switcher -->
-          <div class="px-3 py-1.5 rounded-lg bg-[#090d16] border border-[#334155] text-slate-300 text-xs font-bold flex items-center gap-2">
-            <span class="text-[#00FF66]">EN</span>
-            <span class="text-slate-600">/</span>
-            <span>IN</span>
-          </div>
-
-          <!-- Status Indicator Pill -->
-          <div class="px-3.5 py-1.5 rounded-lg bg-[#090d16] border border-[#00FF66]/40 text-[#00FF66] text-xs font-extrabold flex items-center gap-2 shadow-lg shadow-[#00FF66]/10">
-            <span class="w-2 h-2 rounded-full bg-[#00FF66] animate-ping"></span>
-            <span>AGENT-READY</span>
-          </div>
+        <!-- Right Quick Action / Connect -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="Alex_C_Varghese_Resume.pdf" download class="px-4 py-2 rounded-lg bg-zinc-900 border border-zinc-700/80 text-zinc-200 hover:text-white hover:border-zinc-500 text-xs font-medium transition-all flex items-center gap-2">
+            <i class="fas fa-file-pdf text-rose-400"></i>
+            <span>Resume</span>
+          </a>
+          <a href="#contact" class="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-medium transition-all shadow-md shadow-blue-600/20">
+            Get in Touch
+          </a>
         </div>
 
-        <!-- Mobile Menu Button -->
+        <!-- Mobile Menu Toggle -->
         <div class="md:hidden">
-          <button id="mobile-menu-btn" class="p-3 rounded-xl bg-[#090d16] border border-[#334155] text-slate-200">
-            <i class="fas fa-bars text-lg"></i>
+          <button id="mobile-menu-btn" class="p-2.5 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-300 hover:text-white">
+            <i class="fas fa-bars text-sm"></i>
           </button>
         </div>
 
@@ -109,132 +101,126 @@
     </div>
 
     <!-- Mobile Drawer Menu -->
-    <div id="mobile-menu" class="hidden md:hidden border-t border-[#1e293b] bg-[#090d16] px-6 py-6 space-y-3 font-mono text-base">
-      <a href="#about" class="block py-2 text-slate-300 hover:text-[#00FF66]">//about</a>
-      <a href="#skills" class="block py-2 text-slate-300 hover:text-[#00FF66]">//stack</a>
-      <a href="#projects" class="block py-2 text-slate-300 hover:text-[#00FF66]">//projects</a>
-      <a href="#education" class="block py-2 text-slate-300 hover:text-[#00FF66]">//education</a>
-      <a href="#terminal-section" class="block py-2 text-slate-300 hover:text-[#00FF66]">//terminal</a>
-      <a href="#activity-log" class="block py-2 text-slate-300 hover:text-[#00FF66]">//activity</a>
-      <a href="#resume" class="block py-2 text-slate-300 hover:text-[#00FF66]">//resume</a>
-      <a href="#contact" class="block py-2 text-slate-300 hover:text-[#00FF66]">//contact</a>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-zinc-800/80 bg-zinc-950/95 px-6 py-5 space-y-3 text-sm">
+      <a href="#about" class="block py-1.5 text-zinc-300 hover:text-white">About</a>
+      <a href="#skills" class="block py-1.5 text-zinc-300 hover:text-white">Skills</a>
+      <a href="#projects" class="block py-1.5 text-zinc-300 hover:text-white">Projects</a>
+      <a href="#education" class="block py-1.5 text-zinc-300 hover:text-white">Education</a>
+      <a href="#console-section" class="block py-1.5 text-zinc-300 hover:text-white">Console</a>
+      <a href="#resume" class="block py-1.5 text-zinc-300 hover:text-white">Resume</a>
+      <a href="#contact" class="block py-1.5 text-zinc-300 hover:text-white">Contact</a>
     </div>
   </header>
 
-  <!-- HERO SECTION WITH SCALED-UP FONT & MATRIX ANIMATED VIDEO BACKGROUND LAYER -->
-  <section id="hero" class="pt-24 pb-20 md:pt-36 md:pb-32 relative overflow-hidden">
-    
-    <!-- HEADER ANIMATED MATRIX CODE STREAM CANVAS -->
-    <canvas id="header-matrix-canvas"></canvas>
-
+  <!-- HERO SECTION -->
+  <section id="hero" class="pt-16 pb-20 md:pt-28 md:pb-28 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
-        <!-- Left Hero Column -->
-        <div class="lg:col-span-8 space-y-8 reveal-on-scroll">
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-7 space-y-6 reveal-on-scroll">
           
-          <!-- Monospaced Header Label -->
-          <div class="inline-flex items-center gap-2.5 font-mono text-sm sm:text-base text-[#00FF66] font-bold">
-            <span>[ SYSTEM STATUS: ONLINE ]</span>
-            <span>●</span>
-            <span class="text-slate-300">MCA Student @ Amal Jyothi College (2026 - Present)</span>
+          <!-- Status Pill -->
+          <div class="status-pill">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            <span class="text-zinc-300 font-medium">MCA Student & Application Developer</span>
           </div>
 
-          <!-- Bold Scaled Sans-Serif Title -->
-          <div class="space-y-4">
-            <h1 class="text-6xl sm:text-8xl lg:text-9xl font-black text-white tracking-tight uppercase leading-none">
-              Alex C Varghese
+          <!-- Headline -->
+          <div class="space-y-3">
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.1]">
+              Building intelligent, high-impact software.
             </h1>
-            <div class="text-xl sm:text-2xl font-mono text-slate-200 h-10 flex items-center gap-2 pt-2">
-              <span id="typewriter-text" class="text-slate-100 font-semibold"></span>
+            <div class="text-lg sm:text-xl text-zinc-400 font-medium h-8 flex items-center gap-1.5">
+              <span id="typewriter-text" class="text-zinc-200"></span>
               <span class="cursor-blink"></span>
             </div>
           </div>
 
           <!-- Description -->
-          <p class="text-slate-300 text-lg sm:text-xl lg:text-2xl max-w-3xl leading-relaxed font-sans">
-            Building next-generation intelligent applications, audio MIR analyzers, and data-driven systems. Pursuing MCA at <strong class="text-white">Amal Jyothi College of Engineering (2026–Present)</strong> & BCA Graduate from <strong class="text-white">Saintgits College (2023–2026, 7.07 CGPA)</strong>. Winner of i_hack 4.0 Hackathon @ Saintgits.
+          <p class="text-zinc-400 text-base sm:text-lg leading-relaxed max-w-2xl">
+            Passionate software developer pursuing MCA at <strong class="text-zinc-200">Amal Jyothi College of Engineering</strong> (2026–Present) and BCA Graduate from <strong class="text-zinc-200">Saintgits College of Applied Science</strong> (7.07 CGPA). First-rank winner of the <strong class="text-zinc-200">i_hack 4.0 Hackathon</strong> @ Saintgits.
           </p>
 
-          <!-- Thin-Bordered Call-To-Action Buttons -->
-          <div class="flex flex-wrap items-center gap-4 pt-4 font-mono text-sm sm:text-base">
-            <a href="#contact" class="px-8 py-4 rounded-xl bg-[#00FF66] text-black font-extrabold flex items-center gap-2.5 hover:bg-[#00e65c] transition-all shadow-xl shadow-[#00FF66]/20">
-              <i class="fas fa-terminal text-lg"></i>
-              <span>BOOK A PROJECT / HIRE ME</span>
+          <!-- Action Buttons -->
+          <div class="flex flex-wrap items-center gap-3.5 pt-2">
+            <a href="#projects" class="px-6 py-3 rounded-xl bg-white text-zinc-950 hover:bg-zinc-200 font-semibold text-sm transition-all shadow-lg shadow-white/10 flex items-center gap-2">
+              <span>View Projects</span>
+              <i class="fas fa-arrow-down text-xs"></i>
             </a>
 
-            <a href="Alex_C_Varghese_Resume.pdf" download class="px-8 py-4 rounded-xl bg-[#090d16] border border-[#334155] text-white hover:border-[#00FF66] hover:text-[#00FF66] transition-all flex items-center gap-2.5 font-bold">
-              <i class="fas fa-file-pdf text-lg"></i>
-              <span>DOWNLOAD CV (PDF)</span>
+            <a href="Alex_C_Varghese_Resume.pdf" download class="px-6 py-3 rounded-xl bg-zinc-900/80 border border-zinc-700/80 text-zinc-200 hover:text-white hover:border-zinc-500 font-medium text-sm transition-all flex items-center gap-2">
+              <i class="fas fa-file-pdf text-rose-400"></i>
+              <span>Download CV (PDF)</span>
             </a>
 
-            <div class="px-5 py-4 rounded-xl bg-[#090d16] border border-[#00FF66]/50 text-[#00FF66] font-extrabold flex items-center gap-2 shadow-lg">
-              <span class="w-2.5 h-2.5 rounded-full bg-[#00FF66] animate-pulse"></span>
-              <span>AGENT-READY</span>
-            </div>
+            <a href="#contact" class="px-6 py-3 rounded-xl bg-zinc-900/50 hover:bg-zinc-800/80 border border-zinc-800 text-zinc-300 hover:text-white font-medium text-sm transition-all">
+              Contact Me
+            </a>
           </div>
 
           <!-- Social Quick Links -->
-          <div class="flex flex-wrap items-center gap-5 pt-3 font-mono text-sm sm:text-base text-slate-300">
-            <a href="https://github.com/ALEX2k5-777" target="_blank" class="hover:text-[#00FF66] transition-colors flex items-center gap-2 font-medium">
-              <i class="fab fa-github text-lg"></i> github/ALEX2k5-777
+          <div class="flex flex-wrap items-center gap-4 pt-4 text-xs sm:text-sm text-zinc-400">
+            <a href="https://github.com/ALEX2k5-777" target="_blank" class="hover:text-white transition-colors flex items-center gap-1.5">
+              <i class="fab fa-github text-base"></i> github/ALEX2k5-777
             </a>
-            <span>/</span>
-            <a href="https://www.linkedin.com/in/alex-c-varghese-038581358/" target="_blank" class="hover:text-[#00FF66] transition-colors flex items-center gap-2 font-medium">
-              <i class="fab fa-linkedin text-lg"></i> linkedin/alex-c-varghese
+            <span class="text-zinc-700">•</span>
+            <a href="https://www.linkedin.com/in/alex-c-varghese-038581358/" target="_blank" class="hover:text-blue-400 transition-colors flex items-center gap-1.5">
+              <i class="fab fa-linkedin text-base text-blue-400"></i> LinkedIn
             </a>
-            <span>/</span>
-            <a href="Alex_C_Varghese_Resume.pdf" target="_blank" download class="hover:text-[#00FF66] transition-colors flex items-center gap-2 font-medium text-[#00FF66]">
-              <i class="fas fa-file-pdf text-lg"></i> resume/pdf
-            </a>
-            <span>/</span>
-            <a href="https://www.instagram.com/_a.l.e.x__.c.__/" target="_blank" class="hover:text-[#00FF66] transition-colors flex items-center gap-2 font-medium">
-              <i class="fab fa-instagram text-lg"></i> @_a.l.e.x__.c.__
+            <span class="text-zinc-700">•</span>
+            <a href="mailto:alexcvarghese777@gmail.com" class="hover:text-white transition-colors flex items-center gap-1.5">
+              <i class="fas fa-envelope text-base"></i> alexcvarghese777@gmail.com
             </a>
           </div>
 
         </div>
 
-        <!-- Right Hero Profile & Terminal Box Column -->
-        <div class="lg:col-span-4 reveal-on-scroll reveal-delay-2">
-          <div class="terminal-card rounded-2xl p-6 space-y-5 border border-[#334155]">
+        <!-- Right Hero Profile Card -->
+        <div class="lg:col-span-5 reveal-on-scroll">
+          <div class="modern-card p-6 space-y-6">
             
-            <!-- User Profile Photo Header (TIGHT FACE HEADSHOT CROP) -->
-            <div class="flex items-center gap-4 pb-4 border-b border-[#1e293b]">
-              <div class="w-20 h-20 rounded-xl bg-[#090d16] border-2 border-[#00FF66]/60 overflow-hidden p-0.5 shrink-0 shadow-lg shadow-[#00FF66]/20">
-                <img src="hero_face.jpg" alt="Alex C Varghese" class="w-full h-full object-cover object-center rounded-lg">
+            <!-- User Profile Photo & Details -->
+            <div class="flex items-center gap-4 pb-5 border-b border-zinc-800/80">
+              <div class="w-20 h-20 rounded-2xl overflow-hidden border border-zinc-700/80 shrink-0 shadow-lg shadow-black/40">
+                <img src="hero_face.jpg" alt="Alex C Varghese" class="w-full h-full object-cover object-center">
               </div>
-              <div>
-                <h3 class="font-extrabold text-white text-xl">Alex C Varghese</h3>
-                <p class="font-mono text-sm text-[#00FF66] font-bold">MCA 2026 – Present</p>
-                <p class="font-mono text-xs text-slate-400">Amal Jyothi College</p>
+              <div class="space-y-1">
+                <h3 class="font-bold text-white text-xl">Alex C Varghese</h3>
+                <p class="text-xs font-medium text-blue-400">MCA Student (2026 – Present)</p>
+                <p class="text-xs text-zinc-400">Amal Jyothi College of Engineering</p>
               </div>
             </div>
 
-            <!-- Terminal System Info -->
-            <div class="font-mono text-sm text-slate-200 space-y-2.5 leading-relaxed">
-              <div class="flex justify-between">
-                <span class="text-slate-400">OS:</span>
-                <span class="text-white font-medium">macOS / Linux / Win</span>
+            <!-- Profile Summary Points -->
+            <div class="space-y-3 text-sm text-zinc-300">
+              <div class="flex items-center justify-between py-1 border-b border-zinc-800/40">
+                <span class="text-zinc-500">Degree</span>
+                <span class="text-zinc-200 font-medium">MCA (Master of Computer Apps)</span>
               </div>
-              <div class="flex justify-between">
-                <span class="text-slate-400">DEGREE:</span>
-                <span class="text-white font-medium">MCA @ Amal Jyothi</span>
+              <div class="flex items-center justify-between py-1 border-b border-zinc-800/40">
+                <span class="text-zinc-500">Previous</span>
+                <span class="text-zinc-200 font-medium">BCA @ Saintgits (CGPA 7.07)</span>
               </div>
-              <div class="flex justify-between">
-                <span class="text-slate-400">PREV DEGREE:</span>
-                <span class="text-white font-medium">BCA @ Saintgits (7.07)</span>
+              <div class="flex items-center justify-between py-1 border-b border-zinc-800/40">
+                <span class="text-zinc-500">Location</span>
+                <span class="text-zinc-200 font-medium">Alappuzha, Kerala, India</span>
               </div>
-              <div class="flex justify-between">
-                <span class="text-slate-400">LOCATION:</span>
-                <span class="text-white font-medium">Alappuzha, Kerala</span>
-              </div>
-              <div class="flex justify-between">
-                <span class="text-slate-400">HACKATHON:</span>
-                <span class="text-[#00FF66] font-extrabold">i_hack 4.0 @ Saintgits</span>
+              <div class="flex items-center justify-between py-1">
+                <span class="text-zinc-500">Recognition</span>
+                <span class="text-amber-400 font-semibold flex items-center gap-1.5">
+                  <i class="fas fa-trophy text-xs"></i> i_hack 4.0 Winner @ Saintgits
+                </span>
               </div>
             </div>
+
+            <!-- Quick Status Pill -->
+            <div class="p-3 rounded-xl bg-zinc-900/60 border border-zinc-800 flex items-center justify-between text-xs">
+              <span class="text-zinc-400">Focus Areas:</span>
+              <span class="text-zinc-200 font-medium">Python • Audio MIR • ML Web Apps</span>
+            </div>
+
           </div>
         </div>
 
@@ -243,99 +229,103 @@
     </div>
   </section>
 
-  <!-- DATA METRICS GRID -->
-  <section class="py-16 border-y border-[#1e293b] bg-[#090d16]">
+  <!-- KEY METRICS GRID -->
+  <section class="py-12 border-y border-zinc-800/60 bg-zinc-950/40">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
         
-        <!-- Stat 1 -->
-        <div class="space-y-2 text-center sm:text-left reveal-on-scroll">
-          <div class="text-5xl sm:text-7xl lg:text-8xl font-black text-white font-mono tracking-tight">5+</div>
-          <div class="font-mono text-sm sm:text-base text-[#00FF66] font-extrabold uppercase">// FEATURED PROJECTS</div>
-          <div class="font-mono text-xs sm:text-sm text-slate-400">Alexa Player, VibePlayer, AQI, AGRIGO & Fly-Vezhambal</div>
+        <!-- Metric 1 -->
+        <div class="p-5 rounded-2xl bg-zinc-900/30 border border-zinc-800/60 reveal-on-scroll">
+          <div class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">5+</div>
+          <div class="text-xs sm:text-sm font-semibold text-blue-400 uppercase tracking-wider mt-1">Featured Projects</div>
+          <div class="text-xs text-zinc-500 mt-1">Audio MIR, ML Apps & Mobile Game</div>
         </div>
 
-        <!-- Stat 2 -->
-        <div class="space-y-2 text-center sm:text-left reveal-on-scroll reveal-delay-1">
-          <div class="text-5xl sm:text-7xl lg:text-8xl font-black text-white font-mono tracking-tight">1st</div>
-          <div class="font-mono text-sm sm:text-base text-[#00FF66] font-extrabold uppercase">// i_HACK 4.0 RANK</div>
-          <div class="font-mono text-xs sm:text-sm text-slate-400">Saintgits Hackathon Winner 🏆</div>
+        <!-- Metric 2 -->
+        <div class="p-5 rounded-2xl bg-zinc-900/30 border border-zinc-800/60 reveal-on-scroll">
+          <div class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">1st</div>
+          <div class="text-xs sm:text-sm font-semibold text-amber-400 uppercase tracking-wider mt-1">Hackathon Rank 🏆</div>
+          <div class="text-xs text-zinc-500 mt-1">i_hack 4.0 @ Saintgits College</div>
         </div>
 
-        <!-- Stat 3 -->
-        <div class="space-y-2 text-center sm:text-left reveal-on-scroll reveal-delay-2">
-          <div class="text-5xl sm:text-7xl lg:text-8xl font-black text-white font-mono tracking-tight">2026</div>
-          <div class="font-mono text-sm sm:text-base text-[#00FF66] font-extrabold uppercase">// MCA PRESENT</div>
-          <div class="font-mono text-xs sm:text-sm text-slate-400">Amal Jyothi College of Engineering</div>
+        <!-- Metric 3 -->
+        <div class="p-5 rounded-2xl bg-zinc-900/30 border border-zinc-800/60 reveal-on-scroll">
+          <div class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">2026</div>
+          <div class="text-xs sm:text-sm font-semibold text-emerald-400 uppercase tracking-wider mt-1">MCA Present</div>
+          <div class="text-xs text-zinc-500 mt-1">Amal Jyothi College of Engineering</div>
         </div>
 
-        <!-- Stat 4 -->
-        <div class="space-y-2 text-center sm:text-left reveal-on-scroll reveal-delay-3">
-          <div class="text-5xl sm:text-7xl lg:text-8xl font-black text-white font-mono tracking-tight">7.07</div>
-          <div class="font-mono text-sm sm:text-base text-[#00FF66] font-extrabold uppercase">// BCA CGPA</div>
-          <div class="font-mono text-xs sm:text-sm text-slate-400">Saintgits College (2023 - 2026)</div>
+        <!-- Metric 4 -->
+        <div class="p-5 rounded-2xl bg-zinc-900/30 border border-zinc-800/60 reveal-on-scroll">
+          <div class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">7.07</div>
+          <div class="text-xs sm:text-sm font-semibold text-purple-400 uppercase tracking-wider mt-1">BCA CGPA</div>
+          <div class="text-xs text-zinc-500 mt-1">Saintgits College (2023–2026)</div>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ABOUT ME SECTION WITH FEATURED CROPPED PHOTO SHOWCASE -->
+  <!-- ABOUT ME SECTION -->
   <section id="about" class="py-24 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="flex flex-col items-start mb-12 reveal-on-scroll">
-        <span class="font-mono text-sm text-[#00FF66] font-extrabold uppercase tracking-widest">// 01. PROFILE & BACKGROUND</span>
-        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase mt-2">Technical Overview</h2>
+        <span class="text-xs font-semibold text-blue-400 uppercase tracking-widest">About Me</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight mt-1.5">Profile & Overview</h2>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
         
         <!-- Left Overview Text -->
-        <div class="lg:col-span-7 space-y-6 text-slate-200 leading-relaxed font-sans text-lg sm:text-xl reveal-on-scroll">
+        <div class="lg:col-span-7 space-y-5 text-zinc-400 leading-relaxed text-base sm:text-lg reveal-on-scroll">
           <p>
-            I am an MCA student at <strong class="text-white">Amal Jyothi College of Engineering, Kanjirappally (2026 – Present)</strong> and a BCA graduate from <strong class="text-white">Saintgits College of Applied Science (2023 – 2026, 7.07 CGPA)</strong>.
+            Hello! I am <strong class="text-zinc-100">Alex C Varghese</strong>, a developer dedicated to crafting functional, reliable, and user-centric software. I am currently pursuing my Master of Computer Applications (MCA) at <strong class="text-zinc-100">Amal Jyothi College of Engineering</strong> (2026–Present).
           </p>
           <p>
-            My engineering work includes creating <strong class="text-[#00FF66]">Alexa Player</strong> (audio MIR & 3D virtual piano analyzer), <strong class="text-[#00FF66]">VibePlayer</strong> (audio player with real-time visualizers), machine learning applications like the <strong class="text-white">Air Quality Index (AQI) Prediction Web App</strong> (built during my time at Akira Software Solutions Pvt Ltd, Technopark Trivandrum), and <strong class="text-[#00FF66]">AGRIGO</strong> & <strong class="text-white">Fly-Vezhambal</strong> (Android 2D arcade game).
+            Prior to my MCA, I completed my Bachelor of Computer Application (BCA) at <strong class="text-zinc-100">Saintgits College of Applied Science</strong> (2023–2026) with a 7.07 CGPA, where my team and I secured <strong class="text-amber-400">1st Rank & Champion in the i_hack 4.0 Hackathon</strong>.
+          </p>
+          <p>
+            My engineering portfolio spans audio MIR analyzers (<strong class="text-zinc-200">Alexa Player</strong>), local media tools (<strong class="text-zinc-200">VibePlayer</strong>), predictive ML models (<strong class="text-zinc-200">Air Quality Index Predictor</strong>, developed during my internship at Akira Software Solutions Pvt Ltd, Technopark Trivandrum), and mobile arcade games (<strong class="text-zinc-200">Fly-Vezhambal</strong>).
           </p>
         </div>
 
-        <!-- Right Photo & Core Highlights Box -->
-        <div class="lg:col-span-5 reveal-on-scroll reveal-delay-1 space-y-6">
+        <!-- Right Showcase Card -->
+        <div class="lg:col-span-5 reveal-on-scroll space-y-4">
           
-          <!-- Cropped Photo Feature Card -->
-          <div class="terminal-card p-4 rounded-2xl border-neon-box flex items-center gap-5">
-            <div class="w-28 h-28 sm:w-32 sm:h-32 rounded-xl border-2 border-[#00FF66] overflow-hidden shrink-0 shadow-xl shadow-[#00FF66]/20">
+          <div class="modern-card p-5 flex items-center gap-4">
+            <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-xl overflow-hidden border border-zinc-700/80 shrink-0">
               <img src="profile.jpg" alt="Alex C Varghese" class="w-full h-full object-cover object-center">
             </div>
-            <div class="space-y-1 font-mono text-xs sm:text-sm">
-              <span class="px-2.5 py-1 rounded bg-[#00FF66]/20 text-[#00FF66] font-extrabold uppercase">ONLINE / MCA STUDENT</span>
-              <h3 class="text-lg font-extrabold text-white pt-1">Alex C Varghese</h3>
-              <p class="text-slate-400">Amal Jyothi (2026 - Present)</p>
-              <p class="text-[#00FF66] font-bold">i_hack 4.0 Champion @ Saintgits 🏆</p>
+            <div class="space-y-1">
+              <div class="text-xs font-semibold px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 w-fit">
+                Software Developer
+              </div>
+              <h3 class="text-lg font-bold text-white pt-0.5">Alex C Varghese</h3>
+              <p class="text-xs text-zinc-400">Kuttanad, Alappuzha, Kerala</p>
+              <p class="text-xs text-amber-400 font-medium pt-1">🏆 i_hack 4.0 Hackathon Champion</p>
             </div>
           </div>
 
           <!-- Core Highlights List -->
-          <div class="terminal-card p-6 rounded-2xl space-y-4 font-mono text-sm sm:text-base border border-[#334155]">
-            <h3 class="text-base sm:text-lg font-bold text-[#00FF66]">// CORE HIGHLIGHTS</h3>
-            <div class="space-y-3 text-slate-200">
-              <div class="flex items-start gap-3">
-                <span class="text-[#00FF66]">●</span>
-                <span>Completed BCA from Saintgits (2023-2026, 7.07 CGPA)</span>
+          <div class="modern-card p-6 space-y-3.5 text-sm">
+            <h4 class="text-xs font-semibold text-zinc-400 uppercase tracking-wider">Key Milestones</h4>
+            <div class="space-y-2.5 text-zinc-300">
+              <div class="flex items-start gap-2.5">
+                <i class="fas fa-check-circle text-blue-400 mt-1 text-xs"></i>
+                <span>MCA Student at Amal Jyothi College of Engineering (2026–Present)</span>
               </div>
-              <div class="flex items-start gap-3">
-                <span class="text-[#00FF66]">●</span>
-                <span>1st Rank Champion in i_hack 4.0 Hackathon @ Saintgits</span>
+              <div class="flex items-start gap-2.5">
+                <i class="fas fa-check-circle text-blue-400 mt-1 text-xs"></i>
+                <span>BCA Graduate from Saintgits College (CGPA: 7.07)</span>
               </div>
-              <div class="flex items-start gap-3">
-                <span class="text-[#00FF66]">●</span>
-                <span>Pursuing MCA at Amal Jyothi College (2026-Present)</span>
+              <div class="flex items-start gap-2.5">
+                <i class="fas fa-trophy text-amber-400 mt-1 text-xs"></i>
+                <span>Winner of i_hack 4.0 Hackathon @ Saintgits College</span>
               </div>
-              <div class="flex items-start gap-3">
-                <span class="text-[#00FF66]">●</span>
-                <span>ML Web App Developer at Technopark Trivandrum</span>
+              <div class="flex items-start gap-2.5">
+                <i class="fas fa-check-circle text-blue-400 mt-1 text-xs"></i>
+                <span>ML Web App Developer @ Akira Software Solutions (Technopark)</span>
               </div>
             </div>
           </div>
@@ -346,196 +336,257 @@
     </div>
   </section>
 
-  <!-- SKILLS & TECHNICAL STACK SECTION -->
-  <section id="skills" class="py-24 bg-[#090d16] border-t border-[#1e293b]">
+  <!-- SKILLS & TECHNICAL STACK -->
+  <section id="skills" class="py-24 bg-zinc-950/40 border-t border-zinc-800/60">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="flex flex-col items-start mb-12 reveal-on-scroll">
-        <span class="font-mono text-sm text-[#00FF66] font-extrabold uppercase tracking-widest">// 02. TECHNICAL COMPETENCIES</span>
-        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase mt-2">Skills & Stack</h2>
+        <span class="text-xs font-semibold text-blue-400 uppercase tracking-widest">Technical Competencies</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight mt-1.5">Skills & Stack</h2>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 font-mono text-sm sm:text-base">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         
-        <div class="terminal-card p-8 rounded-2xl space-y-4 border-neon-box reveal-on-scroll">
-          <h3 class="text-base sm:text-lg font-bold text-[#00FF66]">// LANGUAGES</h3>
-          <ul class="space-y-3 text-slate-200">
-            <li>● Python (Primary / Data / ML / Librosa)</li>
-            <li>● C++ & OOP Concepts</li>
-            <li>● Java Programming</li>
-            <li>● JavaScript & HTML5/CSS3</li>
-          </ul>
+        <!-- Category 1 -->
+        <div class="modern-card p-6 space-y-4 reveal-on-scroll">
+          <div class="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center text-lg">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white">Programming Languages</h3>
+          <p class="text-sm text-zinc-400">Core programming foundations for algorithm design, data structures, and application development.</p>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="px-2.5 py-1 rounded-md bg-zinc-900 border border-zinc-800 text-xs font-medium text-zinc-300">Python 3.12</span>
+            <span class="px-2.5 py-1 rounded-md bg-zinc-900 border border-zinc-800 text-xs font-medium text-zinc-300">Java</span>
+            <span class="px-2.5 py-1 rounded-md bg-zinc-900 border border-zinc-800 text-xs font-medium text-zinc-300">C++</span>
+            <span class="px-2.5 py-1 rounded-md bg-zinc-900 border border-zinc-800 text-xs font-medium text-zinc-300">JavaScript</span>
+            <span class="px-2.5 py-1 rounded-md bg-zinc-900 border border-zinc-800 text-xs font-medium text-zinc-300">HTML5 / CSS3</span>
+          </div>
         </div>
 
-        <div class="terminal-card p-8 rounded-2xl space-y-4 border-neon-box reveal-on-scroll reveal-delay-1">
-          <h3 class="text-base sm:text-lg font-bold text-[#00FF66]">// AI, ML & AUDIO DSP</h3>
-          <ul class="space-y-3 text-slate-200">
-            <li>● Audio MIR & Chord Extraction (Librosa, CQT)</li>
-            <li>● Streamlit Web App Framework</li>
-            <li>● Predictive Model Training</li>
-            <li>● Real-Time Weather APIs</li>
-          </ul>
+        <!-- Category 2 -->
+        <div class="modern-card p-6 space-y-4 reveal-on-scroll">
+          <div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-lg">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white">AI, Audio MIR & Web</h3>
+          <p class="text-sm text-zinc-400">Audio digital signal processing, machine learning prediction models, and dynamic interfaces.</p>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="px-2.5 py-1 rounded-md bg-zinc-900 border border-zinc-800 text-xs font-medium text-zinc-300">Librosa (Audio MIR)</span>
+            <span class="px-2.5 py-1 rounded-md bg-zinc-900 border border-zinc-800 text-xs font-medium text-zinc-300">Web Audio API</span>
+            <span class="px-2.5 py-1 rounded-md bg-zinc-900 border border-zinc-800 text-xs font-medium text-zinc-300">Streamlit</span>
+            <span class="px-2.5 py-1 rounded-md bg-zinc-900 border border-zinc-800 text-xs font-medium text-zinc-300">Predictive Modeling</span>
+            <span class="px-2.5 py-1 rounded-md bg-zinc-900 border border-zinc-800 text-xs font-medium text-zinc-300">REST APIs</span>
+          </div>
         </div>
 
-        <div class="terminal-card p-8 rounded-2xl space-y-4 border-neon-box reveal-on-scroll reveal-delay-2">
-          <h3 class="text-base sm:text-lg font-bold text-[#00FF66]">// TOOLS & WORKFLOW</h3>
-          <ul class="space-y-3 text-slate-200">
-            <li>● Git & GitHub Version Control</li>
-            <li>● Web Audio API & Android Game Dev</li>
-            <li>● Teamwork & Leadership</li>
-            <li>● Growth Mindset & Fast Learner</li>
-          </ul>
+        <!-- Category 3 -->
+        <div class="modern-card p-6 space-y-4 reveal-on-scroll">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center text-lg">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white">Tools & Workflow</h3>
+          <p class="text-sm text-zinc-400">Collaboration, version control, mobile application workflows, and developer productivity.</p>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="px-2.5 py-1 rounded-md bg-zinc-900 border border-zinc-800 text-xs font-medium text-zinc-300">Git & GitHub</span>
+            <span class="px-2.5 py-1 rounded-md bg-zinc-900 border border-zinc-800 text-xs font-medium text-zinc-300">Android Game Dev</span>
+            <span class="px-2.5 py-1 rounded-md bg-zinc-900 border border-zinc-800 text-xs font-medium text-zinc-300">VS Code</span>
+            <span class="px-2.5 py-1 rounded-md bg-zinc-900 border border-zinc-800 text-xs font-medium text-zinc-300">Problem Solving</span>
+            <span class="px-2.5 py-1 rounded-md bg-zinc-900 border border-zinc-800 text-xs font-medium text-zinc-300">Team Leadership</span>
+          </div>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- PROJECTS SHOWCASE SECTION WITH INTERACTIVE FILTER TABS -->
-  <section id="projects" class="py-24 bg-[#030712] border-t border-[#1e293b]">
+  <!-- FEATURED PROJECTS SHOWCASE -->
+  <section id="projects" class="py-24 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 reveal-on-scroll">
         <div>
-          <span class="font-mono text-sm text-[#00FF66] font-extrabold uppercase tracking-widest">// 03. FEATURED CODE REPOSITORIES</span>
-          <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase mt-2">Highlighted Projects</h2>
+          <span class="text-xs font-semibold text-blue-400 uppercase tracking-widest">Portfolio</span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight mt-1.5">Featured Projects</h2>
         </div>
 
-        <!-- Interactive Filter Chips -->
-        <div class="flex flex-wrap items-center gap-2 font-mono text-xs sm:text-sm">
-          <button class="filter-btn active px-4 py-2 rounded-xl bg-[#090d16] border border-[#334155] text-slate-300 font-bold" data-filter="all">
-            [ ALL PROJECTS ]
-          </button>
-          <button class="filter-btn px-4 py-2 rounded-xl bg-[#090d16] border border-[#334155] text-slate-300 font-bold" data-filter="media">
-            [ AUDIO & MEDIA ]
-          </button>
-          <button class="filter-btn px-4 py-2 rounded-xl bg-[#090d16] border border-[#334155] text-slate-300 font-bold" data-filter="ml">
-            [ AI / ML ]
-          </button>
-          <button class="filter-btn px-4 py-2 rounded-xl bg-[#090d16] border border-[#334155] text-slate-300 font-bold" data-filter="android">
-            [ ANDROID GAME ]
-          </button>
+        <!-- Filter Chips -->
+        <div class="flex flex-wrap items-center gap-2">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="media">Audio & Media</button>
+          <button class="filter-btn" data-filter="ml">AI & ML</button>
+          <button class="filter-btn" data-filter="android">Mobile Games</button>
         </div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         
-        <!-- Project 1: Alexa Player (NEW) -->
-        <div class="project-card terminal-card rounded-2xl p-8 flex flex-col justify-between reveal-on-scroll border-neon-box md:col-span-2" data-category="media">
-          <div>
-            <div class="flex items-center justify-between mb-4 font-mono text-sm">
-              <span class="px-3 py-1.5 rounded-lg bg-[#090d16] border border-[#334155] text-purple-400 font-bold">01 // AUDIO MIR & PIANO VISUALIZER</span>
-              <i class="fas fa-music text-2xl text-purple-400"></i>
+        <!-- Project 1: Alexa Player (Flagship Highlight Card) -->
+        <div class="project-card modern-card p-8 flex flex-col justify-between reveal-on-scroll md:col-span-2 border-indigo-500/30" data-category="media">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-semibold px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400">
+                Audio MIR & Virtual Piano Visualizer
+              </span>
+              <a href="https://github.com/ALEX2k5-777/alexa-player" target="_blank" class="text-zinc-400 hover:text-white transition-colors">
+                <i class="fab fa-github text-xl"></i>
+              </a>
             </div>
-            <h3 class="text-3xl font-extrabold text-white mb-3">Alexa Player</h3>
-            <p class="text-slate-300 text-base sm:text-lg leading-relaxed mb-6">
-              Intelligent audio MIR web application built for beginner keyboard players. Automatically extracts song Tempo (BPM), Time Signature (4/4, 3/4, 6/8), and Chords using Constant-Q Transform (CQT) & Pitch Profiling, rendering a 3D interactive virtual piano keyboard with real-time fingering visualizer.
+            
+            <h3 class="text-2xl sm:text-3xl font-bold text-white">Alexa Player</h3>
+            
+            <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
+              An intelligent audio MIR web application built for keyboard players. Automatically extracts song Tempo (BPM), Time Signature (4/4, 3/4, 6/8), and Chords using Constant-Q Transform (CQT) & Pitch Profiling, visualizing exact key fingerings on a 3D interactive virtual piano.
             </p>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 font-mono text-sm text-slate-300 mb-6">
-              <div>● Automatic Tempo (BPM) & Time Signature Detection</div>
-              <div>● 3D Interactive Virtual Piano & Real-Time Key Fingerings</div>
-              <div>● Real-Time Key Transposer (-6 to +6 Semitones)</div>
-              <div>● Slow-Motion Practice Speed & A-B Measure Looper</div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-zinc-300 font-mono py-2">
+              <div class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-indigo-400"></span>
+                <span>Automatic Tempo (BPM) & Time Signature Detection</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-indigo-400"></span>
+                <span>3D Virtual Piano with Real-Time Key Fingerings</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-indigo-400"></span>
+                <span>Real-Time Key Transposer (-6 to +6 Semitones)</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-indigo-400"></span>
+                <span>Slow-Motion Practice Speed & A-B Measure Looper</span>
+              </div>
             </div>
           </div>
-          <div class="pt-5 border-t border-[#1e293b] flex items-center justify-between font-mono text-sm">
-            <span class="text-slate-400 font-medium">Python 3.12 • Librosa • Web Audio API • Tonal.js</span>
-            <a href="https://github.com/ALEX2k5-777/alexa-player" target="_blank" class="text-[#00FF66] hover:underline flex items-center gap-1.5 font-bold text-base">
-              <span>github/alexa-player</span> <i class="fas fa-external-link-alt text-xs"></i>
+
+          <div class="pt-6 mt-6 border-t border-zinc-800 flex items-center justify-between text-xs">
+            <span class="text-zinc-400 font-medium">Python 3.12 • Librosa • Web Audio API • Tonal.js</span>
+            <a href="https://github.com/ALEX2k5-777/alexa-player" target="_blank" class="text-blue-400 hover:text-blue-300 font-semibold flex items-center gap-1.5">
+              <span>View Repository</span>
+              <i class="fas fa-external-link-alt text-[10px]"></i>
             </a>
           </div>
         </div>
 
         <!-- Project 2: VibePlayer -->
-        <div class="project-card terminal-card rounded-2xl p-8 flex flex-col justify-between reveal-on-scroll reveal-delay-1 border-neon-box" data-category="media">
-          <div>
-            <div class="flex items-center justify-between mb-4 font-mono text-sm">
-              <span class="px-3 py-1.5 rounded-lg bg-[#090d16] border border-[#334155] text-[#00FF66] font-bold">02 // MEDIA APP</span>
-              <i class="fas fa-compact-disc text-2xl text-[#00FF66] animate-spin" style="animation-duration: 6s;"></i>
+        <div class="project-card modern-card p-6 flex flex-col justify-between reveal-on-scroll" data-category="media">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400">
+                Media Application
+              </span>
+              <a href="https://github.com/ALEX2k5-777/vibeplayer" target="_blank" class="text-zinc-400 hover:text-white transition-colors">
+                <i class="fab fa-github text-lg"></i>
+              </a>
             </div>
-            <h3 class="text-3xl font-extrabold text-white mb-3">VibePlayer</h3>
-            <p class="text-slate-300 text-base sm:text-lg leading-relaxed mb-6">
-              Modern audio player application with custom playlist organization, real-time audio visualizer effects, and programmer UI controls.
+            
+            <h3 class="text-xl font-bold text-white">VibePlayer</h3>
+            
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              Modern audio player application engineered for seamless playback, custom playlist organization, and real-time audio visualizer effects.
             </p>
-            <div class="font-mono text-sm text-slate-300 space-y-2 mb-6">
-              <div>● Real-Time Equalizer & Audio Processing</div>
-              <div>● Local Library Playlist Manager</div>
+
+            <div class="text-xs text-zinc-400 space-y-1 py-1 font-mono">
+              <div>• Real-time equalizer and audio signal processing</div>
+              <div>• Local library playlist manager and UI controls</div>
             </div>
           </div>
-          <div class="pt-5 border-t border-[#1e293b] flex items-center justify-between font-mono text-sm">
-            <span class="text-slate-400 font-medium">Python • Audio API</span>
-            <a href="https://github.com/ALEX2k5-777/vibeplayer" target="_blank" class="text-[#00FF66] hover:underline flex items-center gap-1.5 font-bold text-base">
-              <span>github/vibeplayer</span> <i class="fas fa-external-link-alt text-xs"></i>
+
+          <div class="pt-4 mt-5 border-t border-zinc-800 flex items-center justify-between text-xs">
+            <span class="text-zinc-500">Python • Audio API</span>
+            <a href="https://github.com/ALEX2k5-777/vibeplayer" target="_blank" class="text-blue-400 hover:text-blue-300 font-medium flex items-center gap-1">
+              <span>github/vibeplayer</span> <i class="fas fa-arrow-right text-[10px]"></i>
             </a>
           </div>
         </div>
 
         <!-- Project 3: AQI Prediction Web App -->
-        <div class="project-card terminal-card rounded-2xl p-8 flex flex-col justify-between reveal-on-scroll reveal-delay-2 border-neon-box" data-category="ml">
-          <div>
-            <div class="flex items-center justify-between mb-4 font-mono text-sm">
-              <span class="px-3 py-1.5 rounded-lg bg-[#090d16] border border-[#334155] text-cyan-400 font-bold">03 // ML WEB APP</span>
-              <i class="fas fa-smog text-2xl text-cyan-400"></i>
+        <div class="project-card modern-card p-6 flex flex-col justify-between reveal-on-scroll" data-category="ml">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400">
+                ML Web App
+              </span>
+              <a href="https://github.com/ALEX2k5-777/Air-Quality-Model-" target="_blank" class="text-zinc-400 hover:text-white transition-colors">
+                <i class="fab fa-github text-lg"></i>
+              </a>
             </div>
-            <h3 class="text-3xl font-extrabold text-white mb-3">AQI Prediction Web App</h3>
-            <p class="text-slate-300 text-base sm:text-lg leading-relaxed mb-6">
-              Machine learning web application developed at Technopark Trivandrum to predict Air Quality Index using pollutant data and Streamlit UI.
+            
+            <h3 class="text-xl font-bold text-white">AQI Prediction Web App</h3>
+            
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              Machine learning web application developed during internship at Technopark Trivandrum to predict Air Quality Index based on environmental pollutants.
             </p>
-            <div class="font-mono text-sm text-slate-300 space-y-2 mb-6">
-              <div>● Akira Software Solutions Pvt Ltd</div>
-              <div>● Python, Predictive Modeling & Streamlit</div>
+
+            <div class="text-xs text-zinc-400 space-y-1 py-1 font-mono">
+              <div>• Akira Software Solutions Pvt Ltd, Technopark</div>
+              <div>• Data preprocessing, model training & Streamlit UI</div>
             </div>
           </div>
-          <div class="pt-5 border-t border-[#1e293b] flex items-center justify-between font-mono text-sm">
-            <span class="text-slate-400 font-medium">Python • Streamlit</span>
-            <a href="https://github.com/ALEX2k5-777/Air-Quality-Model-" target="_blank" class="text-[#00FF66] hover:underline flex items-center gap-1.5 font-bold text-base">
-              <span>github/Air-Quality-Model-</span> <i class="fas fa-external-link-alt text-xs"></i>
+
+          <div class="pt-4 mt-5 border-t border-zinc-800 flex items-center justify-between text-xs">
+            <span class="text-zinc-500">Python • Streamlit</span>
+            <a href="https://github.com/ALEX2k5-777/Air-Quality-Model-" target="_blank" class="text-cyan-400 hover:text-cyan-300 font-medium flex items-center gap-1">
+              <span>github/Air-Quality-Model-</span> <i class="fas fa-arrow-right text-[10px]"></i>
             </a>
           </div>
         </div>
 
         <!-- Project 4: AGRIGO -->
-        <div class="project-card terminal-card rounded-2xl p-8 flex flex-col justify-between reveal-on-scroll reveal-delay-3 border-neon-box" data-category="media">
-          <div>
-            <div class="flex items-center justify-between mb-4 font-mono text-sm">
-              <span class="px-3 py-1.5 rounded-lg bg-[#090d16] border border-[#334155] text-emerald-400 font-bold">04 // AGRITECH</span>
-              <i class="fas fa-seedling text-2xl text-emerald-400"></i>
+        <div class="project-card modern-card p-6 flex flex-col justify-between reveal-on-scroll" data-category="media">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400">
+                AgriTech Platform
+              </span>
+              <span class="text-xs text-zinc-500">Academic Project</span>
             </div>
-            <h3 class="text-3xl font-extrabold text-white mb-3">AGRIGO</h3>
-            <p class="text-slate-300 text-base sm:text-lg leading-relaxed mb-6">
-              Dynamic agricultural management web app designed to help farmers track field data and optimize irrigation with real-time weather APIs.
+            
+            <h3 class="text-xl font-bold text-white">AGRIGO</h3>
+            
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              Agricultural management platform designed to help farmers track field metrics and optimize irrigation routines using real-time weather APIs.
             </p>
-            <div class="font-mono text-sm text-slate-300 space-y-2 mb-6">
-              <div>● Real-Time Weather API Integration</div>
-              <div>● Secure Multi-Role Auth (Admins & Farmers)</div>
+
+            <div class="text-xs text-zinc-400 space-y-1 py-1 font-mono">
+              <div>• Real-time weather API integration</div>
+              <div>• Secure multi-role authentication (farmers & admins)</div>
             </div>
           </div>
-          <div class="pt-5 border-t border-[#1e293b] flex items-center justify-between font-mono text-sm">
-            <span class="text-slate-400 font-medium">Python • Weather API</span>
-            <span class="text-slate-400 font-medium">Academic Build</span>
+
+          <div class="pt-4 mt-5 border-t border-zinc-800 flex items-center justify-between text-xs">
+            <span class="text-zinc-500">Python • Weather APIs</span>
+            <span class="text-zinc-400 text-xs">Fullstack Platform</span>
           </div>
         </div>
 
         <!-- Project 5: Fly-Vezhambal -->
-        <div class="project-card terminal-card rounded-2xl p-8 flex flex-col justify-between reveal-on-scroll reveal-delay-3 border-neon-box" data-category="android">
-          <div>
-            <div class="flex items-center justify-between mb-4 font-mono text-sm">
-              <span class="px-3 py-1.5 rounded-lg bg-[#090d16] border border-[#334155] text-amber-400 font-bold">05 // ANDROID GAME APP</span>
-              <i class="fab fa-android text-2xl text-amber-400"></i>
+        <div class="project-card modern-card p-6 flex flex-col justify-between reveal-on-scroll" data-category="android">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400">
+                Android 2D Game App
+              </span>
+              <a href="https://github.com/ALEX2k5-777/fly-vezhambal" target="_blank" class="text-zinc-400 hover:text-white transition-colors">
+                <i class="fab fa-github text-lg"></i>
+              </a>
             </div>
-            <h3 class="text-3xl font-extrabold text-white mb-3">Fly-Vezhambal</h3>
-            <p class="text-slate-300 text-base sm:text-lg leading-relaxed mb-6">
-              Android 2D arcade game application inspired by Flappy Bird, featuring custom player flight physics, obstacle collision detection, high score tracking, and smooth touch controls.
+            
+            <h3 class="text-xl font-bold text-white">Fly-Vezhambal</h3>
+            
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              An Android 2D arcade mobile game inspired by Flappy Bird, featuring custom player flight physics, obstacle collision detection, and high score tracking.
             </p>
-            <div class="font-mono text-sm text-slate-300 space-y-2 mb-6">
-              <div>● Flappy Bird Style 2D Android Arcade Game</div>
-              <div>● Custom Touch Controls & High Score System</div>
+
+            <div class="text-xs text-zinc-400 space-y-1 py-1 font-mono">
+              <div>• Flappy Bird style 2D mobile arcade mechanics</div>
+              <div>• Smooth touch controls and persistent high scores</div>
             </div>
           </div>
-          <div class="pt-5 border-t border-[#1e293b] flex items-center justify-between font-mono text-sm">
-            <span class="text-slate-400 font-medium">Android • Game Dev</span>
-            <a href="https://github.com/ALEX2k5-777/fly-vezhambal" target="_blank" class="text-[#00FF66] hover:underline flex items-center gap-1.5 font-bold text-base">
-              <span>github/fly-vezhambal</span> <i class="fas fa-external-link-alt text-xs"></i>
+
+          <div class="pt-4 mt-5 border-t border-zinc-800 flex items-center justify-between text-xs">
+            <span class="text-zinc-500">Android • Mobile Game</span>
+            <a href="https://github.com/ALEX2k5-777/fly-vezhambal" target="_blank" class="text-amber-400 hover:text-amber-300 font-medium flex items-center gap-1">
+              <span>github/fly-vezhambal</span> <i class="fas fa-arrow-right text-[10px]"></i>
             </a>
           </div>
         </div>
@@ -544,125 +595,113 @@
     </div>
   </section>
 
-  <!-- EDUCATION & HACKATHON SECTION -->
-  <section id="education" class="py-24 bg-[#090d16] border-t border-[#1e293b]">
+  <!-- EDUCATION & RECOGNITION -->
+  <section id="education" class="py-24 bg-zinc-950/40 border-t border-zinc-800/60">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="flex flex-col items-start mb-12 reveal-on-scroll">
-        <span class="font-mono text-sm text-[#00FF66] font-extrabold uppercase tracking-widest">// 04. ACADEMIC TIMELINE</span>
-        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase mt-2">Education & Awards</h2>
+        <span class="text-xs font-semibold text-blue-400 uppercase tracking-widest">Academic Timeline</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight mt-1.5">Education & Awards</h2>
       </div>
 
-      <div class="space-y-6 max-w-5xl mx-auto">
+      <div class="space-y-5 max-w-4xl mx-auto">
         
         <!-- MCA -->
-        <div class="terminal-card p-8 rounded-2xl reveal-on-scroll border-l-4 border-l-[#00FF66]">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3 font-mono text-sm">
-            <h3 class="text-xl sm:text-2xl font-extrabold text-white">Amal Jyothi College of Engineering, Kanjirappally</h3>
-            <span class="px-3 py-1.5 rounded-lg bg-[#00FF66]/20 text-[#00FF66] font-extrabold w-fit text-sm">2026 – PRESENT (CURRENT)</span>
+        <div class="modern-card p-7 reveal-on-scroll border-l-4 border-l-blue-500">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+            <h3 class="text-xl font-bold text-white">Amal Jyothi College of Engineering, Kanjirappally</h3>
+            <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 w-fit">
+              2026 – Present (Current)
+            </span>
           </div>
-          <p class="font-mono text-base sm:text-lg text-[#00FF66] font-bold">Master of Computer Applications (MCA)</p>
-          <p class="text-slate-300 text-base mt-2">Advanced computer applications, AI systems, and software engineering.</p>
+          <p class="text-sm font-semibold text-blue-300">Master of Computer Applications (MCA)</p>
+          <p class="text-sm text-zinc-400 mt-1">Specializing in advanced software engineering, AI application pipelines, and data systems.</p>
         </div>
 
-        <!-- BCA WITH i_HACK 4.0 WINNER BADGE AT SAINTGITS -->
-        <div class="terminal-card p-8 rounded-2xl reveal-on-scroll reveal-delay-1 border-l-4 border-l-amber-400">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3 font-mono text-sm">
-            <h3 class="text-xl sm:text-2xl font-extrabold text-white">Saintgits College of Applied Science, Kottayam</h3>
-            <span class="px-3 py-1.5 rounded-lg bg-[#030712] border border-[#334155] text-slate-300 font-bold w-fit text-sm">2023 – 2026</span>
+        <!-- BCA with i_hack 4.0 Winner Badge -->
+        <div class="modern-card p-7 reveal-on-scroll border-l-4 border-l-amber-400">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+            <h3 class="text-xl font-bold text-white">Saintgits College of Applied Science, Kottayam</h3>
+            <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-400 w-fit">
+              2023 – 2026
+            </span>
           </div>
-          <p class="font-mono text-base sm:text-lg text-slate-200 font-semibold mb-2">Bachelor of Computer Application (BCA) — CGPA: <strong class="text-white font-extrabold">7.07</strong></p>
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-amber-500/10 border border-amber-400/40 text-amber-400 font-mono text-sm font-extrabold">
-            <span>🏆 Winner & 1st Rank Champion — i_hack 4.0 Hackathon</span>
+          <p class="text-sm font-semibold text-zinc-200">Bachelor of Computer Application (BCA) — CGPA: <strong class="text-white">7.07</strong></p>
+          <div class="inline-flex items-center gap-2 mt-3 px-3 py-1 rounded-lg bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold">
+            <i class="fas fa-trophy"></i>
+            <span>Winner & 1st Rank Champion — i_hack 4.0 Hackathon (Saintgits)</span>
           </div>
         </div>
 
         <!-- Higher Secondary -->
-        <div class="terminal-card p-8 rounded-2xl reveal-on-scroll reveal-delay-2">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3 font-mono text-sm">
-            <h3 class="text-xl sm:text-2xl font-extrabold text-white">St George HSS, Muttar</h3>
-            <span class="px-3 py-1.5 rounded-lg bg-[#030712] border border-[#334155] text-slate-300 font-bold w-fit text-sm">2021 – 2023</span>
+        <div class="modern-card p-6 reveal-on-scroll">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-1">
+            <h3 class="text-lg font-bold text-white">St George HSS, Muttar</h3>
+            <span class="text-xs text-zinc-500 font-medium">2021 – 2023</span>
           </div>
-          <p class="font-mono text-base sm:text-lg text-slate-200 font-semibold">Higher Secondary Education — Score: <strong class="text-white font-extrabold">83.9 %</strong></p>
+          <p class="text-sm text-zinc-300">Higher Secondary Education — Score: <strong class="text-white">83.9%</strong></p>
         </div>
 
         <!-- SSLC -->
-        <div class="terminal-card p-8 rounded-2xl reveal-on-scroll reveal-delay-3">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3 font-mono text-sm">
-            <h3 class="text-xl sm:text-2xl font-extrabold text-white">St George HSS, Muttar</h3>
-            <span class="px-3 py-1.5 rounded-lg bg-[#030712] border border-[#334155] text-slate-300 font-bold w-fit text-sm">2020 – 2021</span>
+        <div class="modern-card p-6 reveal-on-scroll">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-1">
+            <h3 class="text-lg font-bold text-white">St George HSS, Muttar</h3>
+            <span class="text-xs text-zinc-500 font-medium">2020 – 2021</span>
           </div>
-          <p class="font-mono text-base sm:text-lg text-slate-200 font-semibold">10th Standard (SSLC) — Score: <strong class="text-white font-extrabold">Full A+</strong></p>
+          <p class="text-sm text-zinc-300">10th Standard (SSLC) — Score: <strong class="text-white">Full A+</strong></p>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- INTERACTIVE CLI TERMINAL SECTION WITH CLICK CHIPS -->
-  <section id="terminal-section" class="py-24 bg-[#030712] border-t border-[#1e293b]">
+  <!-- INTERACTIVE DEVELOPER CONSOLE -->
+  <section id="console-section" class="py-24 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="flex flex-col items-start mb-12 reveal-on-scroll">
-        <span class="font-mono text-sm text-[#00FF66] font-extrabold uppercase tracking-widest">// 05. INTERACTIVE CLI TERMINAL</span>
-        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase mt-2">Interactive Console</h2>
+        <span class="text-xs font-semibold text-blue-400 uppercase tracking-widest">Developer Shell</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight mt-1.5">Interactive Console</h2>
       </div>
 
-      <div class="terminal-card max-w-5xl mx-auto rounded-2xl overflow-hidden border border-[#334155] shadow-2xl reveal-on-scroll">
+      <div class="console-window max-w-4xl mx-auto reveal-on-scroll">
         
-        <!-- Terminal Header Bar -->
-        <div class="bg-[#090d16] px-6 py-4 border-b border-[#1e293b] flex items-center justify-between font-mono text-sm">
+        <!-- Console Window Header -->
+        <div class="bg-zinc-900/90 px-5 py-3 border-b border-zinc-800 flex items-center justify-between">
           <div class="flex items-center gap-2">
-            <span class="w-3.5 h-3.5 rounded-full bg-rose-500 inline-block"></span>
-            <span class="w-3.5 h-3.5 rounded-full bg-amber-500 inline-block"></span>
-            <span class="w-3.5 h-3.5 rounded-full bg-emerald-500 inline-block"></span>
-            <span class="ml-3 text-slate-400 font-semibold">alex@portfolio:~ (zsh)</span>
+            <span class="w-3 h-3 rounded-full bg-zinc-700 inline-block"></span>
+            <span class="w-3 h-3 rounded-full bg-zinc-700 inline-block"></span>
+            <span class="w-3 h-3 rounded-full bg-zinc-700 inline-block"></span>
+            <span class="ml-2 text-xs font-mono text-zinc-400">alex@portfolio: ~ (zsh)</span>
           </div>
-          <div class="text-slate-400 text-xs font-semibold hidden sm:block">Interactive Terminal Engine</div>
+          <span class="text-xs text-zinc-500 font-mono hidden sm:inline">Interactive Command Shell</span>
         </div>
 
-        <!-- Terminal Body & Output -->
-        <div class="p-6 space-y-4 font-mono text-sm sm:text-base">
-          
-          <div class="text-slate-300 leading-relaxed">
-            Welcome to <span class="text-[#00FF66] font-extrabold">alexcvarghese.dev</span> interactive shell v2.0.<br>
-            Click any command chip below or type <span class="text-[#00FF66] font-bold">help</span> to view all system commands:
+        <!-- Console Body -->
+        <div class="p-6 space-y-4 font-mono text-xs sm:text-sm">
+          <div class="text-zinc-400">
+            Type a command or click any shortcut chip to query portfolio records:
           </div>
 
-          <!-- Clickable Command Quick Chips -->
-          <div class="flex flex-wrap gap-2 pt-1 pb-3 border-b border-[#1e293b]">
-            <button class="term-chip px-3 py-1.5 rounded-lg bg-[#090d16] border border-[#334155] text-[#00FF66] font-bold text-xs hover:bg-[#00FF66] hover:text-black transition-colors" data-cmd="help">
-              help
-            </button>
-            <button class="term-chip px-3 py-1.5 rounded-lg bg-[#090d16] border border-[#334155] text-slate-300 font-bold text-xs hover:bg-[#00FF66] hover:text-black transition-colors" data-cmd="about">
-              about
-            </button>
-            <button class="term-chip px-3 py-1.5 rounded-lg bg-[#090d16] border border-[#334155] text-slate-300 font-bold text-xs hover:bg-[#00FF66] hover:text-black transition-colors" data-cmd="projects">
-              projects
-            </button>
-            <button class="term-chip px-3 py-1.5 rounded-lg bg-[#090d16] border border-[#334155] text-slate-300 font-bold text-xs hover:bg-[#00FF66] hover:text-black transition-colors" data-cmd="education">
-              education
-            </button>
-            <button class="term-chip px-3 py-1.5 rounded-lg bg-[#090d16] border border-[#334155] text-slate-300 font-bold text-xs hover:bg-[#00FF66] hover:text-black transition-colors" data-cmd="skills">
-              skills
-            </button>
-            <button class="term-chip px-3 py-1.5 rounded-lg bg-[#090d16] border border-[#334155] text-slate-300 font-bold text-xs hover:bg-[#00FF66] hover:text-black transition-colors" data-cmd="resume">
-              resume
-            </button>
-            <button class="term-chip px-3 py-1.5 rounded-lg bg-[#090d16] border border-[#334155] text-[#00FF66] font-extrabold text-xs hover:bg-[#00FF66] hover:text-black transition-colors" data-cmd="sudo hire">
-              sudo hire
-            </button>
+          <!-- Quick Chips -->
+          <div class="flex flex-wrap gap-2 pt-1 pb-3 border-b border-zinc-800/80">
+            <button class="console-chip" data-cmd="help">help</button>
+            <button class="console-chip" data-cmd="about">about</button>
+            <button class="console-chip" data-cmd="projects">projects</button>
+            <button class="console-chip" data-cmd="education">education</button>
+            <button class="console-chip" data-cmd="skills">skills</button>
+            <button class="console-chip" data-cmd="resume">resume</button>
+            <button class="console-chip text-blue-400 font-semibold" data-cmd="hire">hire</button>
           </div>
 
-          <div id="terminal-output" class="max-h-64 overflow-y-auto space-y-2 pr-2"></div>
+          <div id="terminal-output" class="max-h-60 overflow-y-auto space-y-2 pr-2 text-zinc-300"></div>
 
-          <!-- Terminal Input Prompt -->
+          <!-- Input Line -->
           <form id="terminal-form" class="flex items-center gap-2 pt-2">
-            <span class="text-[#00FF66] font-bold">alex@portfolio:~$</span>
-            <input type="text" id="terminal-input" placeholder="Type a command (e.g. help, projects, sudo hire)..." 
-              class="w-full bg-transparent text-white font-mono placeholder-slate-600 focus:outline-none">
+            <span class="text-blue-400 font-bold">alex@portfolio:~$</span>
+            <input type="text" id="terminal-input" placeholder="Type a command (e.g. help, projects, resume)..." 
+              class="w-full bg-transparent text-white font-mono placeholder-zinc-600 focus:outline-none text-xs sm:text-sm">
           </form>
-
         </div>
 
       </div>
@@ -671,22 +710,24 @@
   </section>
 
   <!-- RESUME SECTION -->
-  <section id="resume" class="py-20 bg-[#090d16] border-t border-[#1e293b]">
+  <section id="resume" class="py-20 bg-zinc-950/60 border-t border-zinc-800/60">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="terminal-card p-10 rounded-2xl max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 reveal-on-scroll">
-        <div class="space-y-3">
-          <div class="font-mono text-sm text-[#00FF66] font-extrabold uppercase">// OFFICIAL CURRICULUM VITAE</div>
-          <h3 class="text-4xl font-extrabold text-white">Alex C Varghese — Resume PDF</h3>
-          <p class="font-mono text-sm text-slate-300">Updated: MCA (2026-Present), BCA (2023-2026), 5 Projects (incl. Alexa Player) & i_hack 4.0 Winner @ Saintgits</p>
+      <div class="modern-card p-8 sm:p-10 max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 reveal-on-scroll">
+        <div class="space-y-2">
+          <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">
+            Curriculum Vitae
+          </span>
+          <h3 class="text-2xl sm:text-3xl font-bold text-white">Alex C Varghese — Resume</h3>
+          <p class="text-sm text-zinc-400">Updated with MCA (2026–Present), BCA (7.07 CGPA), 5 Projects & i_hack 4.0 Award.</p>
         </div>
 
-        <div class="flex flex-col sm:flex-row items-center gap-4 w-full md:w-auto shrink-0 font-mono text-sm sm:text-base">
-          <a href="Alex_C_Varghese_Resume.pdf" target="_blank" download class="w-full sm:w-auto px-8 py-4 rounded-xl bg-[#00FF66] text-black font-extrabold flex items-center justify-center gap-2.5 hover:bg-[#00e65c] transition-colors shadow-xl shadow-[#00FF66]/20">
-            <i class="fas fa-file-pdf text-lg"></i> DOWNLOAD RESUME (PDF)
+        <div class="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto shrink-0">
+          <a href="Alex_C_Varghese_Resume.pdf" target="_blank" download class="w-full sm:w-auto px-6 py-3 rounded-xl bg-white hover:bg-zinc-200 text-zinc-950 font-semibold text-sm flex items-center justify-center gap-2 transition-all shadow-lg shadow-white/10">
+            <i class="fas fa-file-pdf text-rose-600"></i> Download PDF
           </a>
-          <a href="Alex_C_Varghese_Resume.html" target="_blank" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-[#090d16] border border-[#334155] text-slate-200 hover:text-white text-center font-bold flex items-center justify-center gap-2">
-            <i class="fas fa-external-link-alt text-sm"></i> VIEW PRINTABLE HTML
+          <a href="Alex_C_Varghese_Resume.html" target="_blank" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-zinc-900 border border-zinc-700/80 text-zinc-300 hover:text-white text-sm font-medium flex items-center justify-center gap-2 transition-all">
+            <i class="fas fa-external-link-alt text-xs"></i> View HTML
           </a>
         </div>
       </div>
@@ -694,76 +735,97 @@
     </div>
   </section>
 
-  <!-- CONTACT & MESSAGE SECTION WITH WEB3FORMS API -->
-  <section id="contact" class="py-24 bg-[#030712] border-t border-[#1e293b]">
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="py-24 relative border-t border-zinc-800/60">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="flex flex-col items-start mb-12 reveal-on-scroll">
-        <span class="font-mono text-sm text-[#00FF66] font-extrabold uppercase tracking-widest">// 06. INITIATE CONNECTION</span>
-        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase mt-2">Send Message</h2>
+        <span class="text-xs font-semibold text-blue-400 uppercase tracking-widest">Get In Touch</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight mt-1.5">Let's Connect</h2>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
         
-        <div class="lg:col-span-5 space-y-4 font-mono text-sm sm:text-base reveal-on-scroll">
-          <div class="terminal-card p-8 rounded-2xl space-y-5">
-            <h3 class="text-base sm:text-lg font-bold text-[#00FF66]">// DIRECT CONTACT DETAILS</h3>
-            <div class="space-y-4 text-slate-200">
-              <div>
-                <span class="text-slate-400">EMAIL:</span>
-                <a href="mailto:alexcvarghese777@gmail.com" class="text-white hover:text-[#00FF66] block font-medium">alexcvarghese777@gmail.com</a>
+        <!-- Left Contact Info -->
+        <div class="lg:col-span-5 space-y-4 reveal-on-scroll">
+          <div class="modern-card p-6 sm:p-8 space-y-6">
+            <h3 class="text-lg font-bold text-white">Direct Contact</h3>
+            <div class="space-y-4 text-sm text-zinc-300">
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center shrink-0">
+                  <i class="fas fa-envelope text-xs"></i>
+                </div>
+                <div>
+                  <span class="text-xs text-zinc-500 block">Email Address</span>
+                  <a href="mailto:alexcvarghese777@gmail.com" class="text-zinc-200 hover:text-white transition-colors font-medium">
+                    alexcvarghese777@gmail.com
+                  </a>
+                </div>
               </div>
-              <div>
-                <span class="text-slate-400">PHONE / WHATSAPP:</span>
-                <a href="tel:+919747315186" class="text-white hover:text-[#00FF66] block font-medium">+91 9747315186</a>
+
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center shrink-0">
+                  <i class="fas fa-phone text-xs"></i>
+                </div>
+                <div>
+                  <span class="text-xs text-zinc-500 block">Phone / WhatsApp</span>
+                  <a href="tel:+919747315186" class="text-zinc-200 hover:text-white transition-colors font-medium">
+                    +91 9747315186
+                  </a>
+                </div>
               </div>
-              <div>
-                <span class="text-slate-400">LOCATION:</span>
-                <span class="text-white block font-medium">Alappuzha, Kuttanad, Kerala</span>
+
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center shrink-0">
+                  <i class="fas fa-location-dot text-xs"></i>
+                </div>
+                <div>
+                  <span class="text-xs text-zinc-500 block">Location</span>
+                  <span class="text-zinc-200 font-medium">Alappuzha, Kuttanad, Kerala, India</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="lg:col-span-7 reveal-on-scroll reveal-delay-1">
-          <div class="terminal-card p-8 rounded-2xl">
+        <!-- Right Contact Form -->
+        <div class="lg:col-span-7 reveal-on-scroll">
+          <div class="modern-card p-6 sm:p-8">
             
-            <!-- Direct Inbox Form -->
-            <form id="portfolio-contact-form" action="https://api.web3forms.com/submit" method="POST" class="space-y-5 font-mono text-sm sm:text-base">
-              
+            <form id="portfolio-contact-form" action="https://api.web3forms.com/submit" method="POST" class="space-y-4 text-sm">
               <input type="hidden" name="access_key" value="b0b44c38-f921-4aca-9b21-0ad4d32cfb9e">
-              <input type="hidden" name="subject" value="New Message from Portfolio Visitor">
+              <input type="hidden" name="subject" value="New Inquiry from Portfolio Visitor">
               <input type="hidden" name="from_name" value="alexcvarghese.dev Portfolio">
 
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label for="contact-name" class="block text-slate-300 mb-1.5 font-bold">YOUR NAME *</label>
+                  <label for="contact-name" class="block text-xs font-semibold text-zinc-300 mb-1.5">Your Name *</label>
                   <input type="text" name="name" id="contact-name" required placeholder="e.g. John Doe" 
-                    class="w-full px-4 py-3.5 rounded-xl bg-black border border-[#334155] text-white placeholder-slate-600 focus:outline-none focus:border-[#00FF66]">
+                    class="w-full px-3.5 py-2.5 rounded-xl bg-zinc-900/80 border border-zinc-800 text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-blue-500 text-sm">
                 </div>
                 <div>
-                  <label for="contact-email" class="block text-slate-300 mb-1.5 font-bold">YOUR EMAIL *</label>
+                  <label for="contact-email" class="block text-xs font-semibold text-zinc-300 mb-1.5">Your Email *</label>
                   <input type="email" name="email" id="contact-email" required placeholder="e.g. john@example.com" 
-                    class="w-full px-4 py-3.5 rounded-xl bg-black border border-[#334155] text-white placeholder-slate-600 focus:outline-none focus:border-[#00FF66]">
+                    class="w-full px-3.5 py-2.5 rounded-xl bg-zinc-900/80 border border-zinc-800 text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-blue-500 text-sm">
                 </div>
               </div>
 
               <div>
-                <label for="contact-subject" class="block text-slate-300 mb-1.5 font-bold">SUBJECT</label>
-                <input type="text" name="custom_subject" id="contact-subject" placeholder="Project Opportunity / Hiring" 
-                  class="w-full px-4 py-3.5 rounded-xl bg-black border border-[#334155] text-white placeholder-slate-600 focus:outline-none focus:border-[#00FF66]">
+                <label for="contact-subject" class="block text-xs font-semibold text-zinc-300 mb-1.5">Subject</label>
+                <input type="text" name="custom_subject" id="contact-subject" placeholder="Project Opportunity / Hiring / Internship" 
+                  class="w-full px-3.5 py-2.5 rounded-xl bg-zinc-900/80 border border-zinc-800 text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-blue-500 text-sm">
               </div>
 
               <div>
-                <label for="contact-message" class="block text-slate-300 mb-1.5 font-bold">MESSAGE *</label>
+                <label for="contact-message" class="block text-xs font-semibold text-zinc-300 mb-1.5">Message *</label>
                 <textarea name="message" id="contact-message" rows="4" required placeholder="Write your message here..." 
-                  class="w-full px-4 py-3.5 rounded-xl bg-black border border-[#334155] text-white placeholder-slate-600 focus:outline-none focus:border-[#00FF66] resize-none"></textarea>
+                  class="w-full px-3.5 py-2.5 rounded-xl bg-zinc-900/80 border border-zinc-800 text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-blue-500 text-sm resize-none"></textarea>
               </div>
 
               <button id="form-submit-btn" type="submit" 
-                class="w-full py-4 rounded-xl bg-[#00FF66] text-black font-extrabold text-base hover:bg-[#00e65c] transition-colors flex items-center justify-center gap-2.5 shadow-xl shadow-[#00FF66]/20">
-                <span>SEND MESSAGE</span>
-                <i class="fas fa-paper-plane"></i>
+                class="w-full py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm transition-all flex items-center justify-center gap-2 shadow-lg shadow-blue-600/20">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane text-xs"></i>
               </button>
             </form>
 
@@ -776,102 +838,63 @@
     </div>
   </section>
 
-  <!-- PUBLIC GITHUB ACTIVITY LOG WIDGET & FOOTER -->
-  <footer id="activity-log" class="py-20 bg-[#090d16] border-t border-[#1e293b]">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+  <!-- CLEAN MODERN FOOTER -->
+  <footer class="py-16 bg-zinc-950 border-t border-zinc-800/80 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
       
-      <!-- REAL-TIME PUBLIC GITHUB ACTIVITY LOG WIDGET -->
-      <div class="reveal-on-scroll">
-        <div class="flex items-center justify-between mb-4 font-mono text-sm sm:text-base">
-          <div class="flex items-center gap-2.5">
-            <span class="w-2.5 h-2.5 rounded-full bg-[#00FF66] animate-ping"></span>
-            <span class="text-[#00FF66] font-extrabold uppercase">// PUBLIC GITHUB ACTIVITY LOG</span>
-          </div>
-          <a href="https://github.com/ALEX2k5-777" target="_blank" class="text-slate-300 hover:text-white font-bold">@ALEX2k5-777</a>
-        </div>
-
-        <div class="terminal-card p-6 rounded-2xl font-mono text-sm space-y-3 border border-[#334155]">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-slate-200 border-b border-[#1e293b] pb-3">
-            <div class="flex items-center gap-2.5">
-              <span class="text-[#00FF66] font-bold">e4b71a2</span>
-              <span>Pushed 1 commit to <strong class="text-white">ALEX2k5-777/alexa-player</strong></span>
-            </div>
-            <span class="text-slate-400 text-xs sm:text-sm">Sep 09, 2026 • 22:10:00</span>
-          </div>
-
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-slate-200 border-b border-[#1e293b] pb-3">
-            <div class="flex items-center gap-2.5">
-              <span class="text-[#00FF66] font-bold">c7f8a92</span>
-              <span>Pushed 1 commit to <strong class="text-white">ALEX2k5-777/vibeplayer</strong></span>
-            </div>
-            <span class="text-slate-400 text-xs sm:text-sm">Aug 28, 2026 • 09:34:00</span>
-          </div>
-
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-slate-200">
-            <div class="flex items-center gap-2.5">
-              <span class="text-[#00FF66] font-bold">f9b2e11</span>
-              <span>Updated Streamlit model in <strong class="text-white">ALEX2k5-777/Air-Quality-Model-</strong></span>
-            </div>
-            <span class="text-slate-400 text-xs sm:text-sm">Aug 28, 2026 • 09:12:00</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- MULTI-COLUMN FOOTER GROUPINGS -->
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 font-mono text-sm border-t border-[#1e293b] pt-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
         
         <!-- Col 1: Brand -->
         <div class="space-y-3">
-          <div class="font-extrabold text-white text-xl">alexcvarghese<span class="text-[#00FF66]">.dev</span></div>
-          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-            Software Developer & MCA Student at Amal Jyothi College of Engineering.
+          <div class="font-bold text-white text-lg flex items-center gap-2">
+            <div class="w-6 h-6 rounded-md bg-blue-600 flex items-center justify-center text-xs font-bold text-white">AV</div>
+            <span>Alex C Varghese</span>
+          </div>
+          <p class="text-zinc-500 text-xs leading-relaxed">
+            Software Developer pursuing MCA at Amal Jyothi College of Engineering. Winner of i_hack 4.0 Hackathon @ Saintgits.
           </p>
         </div>
 
-        <!-- Col 2: PAGES -->
-        <div class="space-y-3">
-          <div class="text-[#00FF66] font-extrabold tracking-wider">// PAGES</div>
-          <ul class="space-y-2 text-slate-300">
-            <li><a href="#about" class="hover:text-white">//about</a></li>
-            <li><a href="#skills" class="hover:text-white">//stack</a></li>
-            <li><a href="#projects" class="hover:text-white">//projects</a></li>
-            <li><a href="#education" class="hover:text-white">//education</a></li>
-            <li><a href="#terminal-section" class="hover:text-white">//terminal</a></li>
-            <li><a href="#resume" class="hover:text-white">//resume</a></li>
+        <!-- Col 2: Navigation -->
+        <div class="space-y-2">
+          <div class="text-xs font-semibold text-zinc-300 uppercase tracking-wider">Navigation</div>
+          <ul class="space-y-1.5 text-xs text-zinc-400">
+            <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+            <li><a href="#skills" class="hover:text-white transition-colors">Skills</a></li>
+            <li><a href="#projects" class="hover:text-white transition-colors">Projects</a></li>
+            <li><a href="#education" class="hover:text-white transition-colors">Education</a></li>
+            <li><a href="#resume" class="hover:text-white transition-colors">Resume</a></li>
           </ul>
         </div>
 
-        <!-- Col 3: PROJECTS -->
-        <div class="space-y-3">
-          <div class="text-[#00FF66] font-extrabold tracking-wider">// PROJECTS</div>
-          <ul class="space-y-2 text-slate-300">
-            <li><a href="https://github.com/ALEX2k5-777/alexa-player" target="_blank" class="hover:text-white">Alexa Player 🎹</a></li>
-            <li><a href="https://github.com/ALEX2k5-777/vibeplayer" target="_blank" class="hover:text-white">VibePlayer 🎵</a></li>
-            <li><a href="https://github.com/ALEX2k5-777/Air-Quality-Model-" target="_blank" class="hover:text-white">AQI Model 🍃</a></li>
-            <li><span class="text-slate-500">AGRIGO 🌾</span></li>
-            <li><a href="https://github.com/ALEX2k5-777/fly-vezhambal" target="_blank" class="hover:text-white">Fly-Vezhambal 🎮</a></li>
+        <!-- Col 3: Featured Projects -->
+        <div class="space-y-2">
+          <div class="text-xs font-semibold text-zinc-300 uppercase tracking-wider">Projects</div>
+          <ul class="space-y-1.5 text-xs text-zinc-400">
+            <li><a href="https://github.com/ALEX2k5-777/alexa-player" target="_blank" class="hover:text-white transition-colors">Alexa Player</a></li>
+            <li><a href="https://github.com/ALEX2k5-777/vibeplayer" target="_blank" class="hover:text-white transition-colors">VibePlayer</a></li>
+            <li><a href="https://github.com/ALEX2k5-777/Air-Quality-Model-" target="_blank" class="hover:text-white transition-colors">AQI Predictor</a></li>
+            <li><a href="https://github.com/ALEX2k5-777/fly-vezhambal" target="_blank" class="hover:text-white transition-colors">Fly-Vezhambal</a></li>
           </ul>
         </div>
 
-        <!-- Col 4: SOCIALS & RESUME -->
-        <div class="space-y-3">
-          <div class="text-[#00FF66] font-extrabold tracking-wider">// SOCIALS & RESUME</div>
-          <ul class="space-y-2 text-slate-300">
-            <li><a href="https://github.com/ALEX2k5-777" target="_blank" class="hover:text-white"><i class="fab fa-github mr-1.5"></i> GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/alex-c-varghese-038581358/" target="_blank" class="hover:text-white"><i class="fab fa-linkedin mr-1.5"></i> LinkedIn</a></li>
-            <li><a href="Alex_C_Varghese_Resume.pdf" target="_blank" download class="text-[#00FF66] font-bold hover:underline"><i class="fas fa-file-pdf mr-1.5"></i> Resume PDF</a></li>
-            <li><a href="Alex_C_Varghese_Resume.html" target="_blank" class="text-slate-300 hover:text-white"><i class="fas fa-file-alt mr-1.5"></i> Resume HTML</a></li>
-            <li><a href="https://www.instagram.com/_a.l.e.x__.c.__/" target="_blank" class="hover:text-white"><i class="fab fa-instagram mr-1.5"></i> Instagram</a></li>
-            <li><a href="mailto:alexcvarghese777@gmail.com" class="hover:text-white"><i class="fas fa-envelope mr-1.5"></i> Email Direct</a></li>
+        <!-- Col 4: Links -->
+        <div class="space-y-2">
+          <div class="text-xs font-semibold text-zinc-300 uppercase tracking-wider">Connect</div>
+          <ul class="space-y-1.5 text-xs text-zinc-400">
+            <li><a href="https://github.com/ALEX2k5-777" target="_blank" class="hover:text-white transition-colors"><i class="fab fa-github mr-1.5"></i> GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/alex-c-varghese-038581358/" target="_blank" class="hover:text-white transition-colors"><i class="fab fa-linkedin mr-1.5"></i> LinkedIn</a></li>
+            <li><a href="Alex_C_Varghese_Resume.pdf" download class="hover:text-white transition-colors text-blue-400"><i class="fas fa-file-pdf mr-1.5"></i> Resume (PDF)</a></li>
+            <li><a href="mailto:alexcvarghese777@gmail.com" class="hover:text-white transition-colors"><i class="fas fa-envelope mr-1.5"></i> Email</a></li>
           </ul>
         </div>
 
       </div>
 
       <!-- Copyright Bar -->
-      <div class="border-t border-[#1e293b] pt-8 flex flex-col sm:flex-row items-center justify-between font-mono text-xs sm:text-sm text-slate-400 gap-3">
-        <div>© 2026 ALEX C VARGHESE. ALL RIGHTS RESERVED.</div>
-        <div class="text-[#00FF66] font-bold">● BUILT WITH TERMINAL CYBERPUNK AESTHETIC</div>
+      <div class="border-t border-zinc-800/80 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-zinc-500 gap-3">
+        <div>© 2026 Alex C Varghese. All rights reserved.</div>
+        <div class="text-zinc-400">Crafted with modern minimalist tech design</div>
       </div>
 
     </div>
