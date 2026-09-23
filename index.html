@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   
   <!-- Custom Modern Stylesheet -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2.2">
   
   <script>
     tailwind.config = {
@@ -113,7 +113,10 @@
   </header>
 
   <!-- HERO SECTION -->
-  <section id="hero" class="pt-16 pb-20 md:pt-28 md:pb-28 relative">
+  <section id="hero" class="pt-16 pb-20 md:pt-28 md:pb-28 relative overflow-hidden">
+    <!-- Interactive Constellation Network Canvas -->
+    <canvas id="hero-network-canvas"></canvas>
+    
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -901,6 +904,6 @@
   </footer>
 
   <!-- Main JavaScript File -->
-  <script src="script.js"></script>
+  <script src="script.js?v=2.2"></script>
 </body>
 </html>

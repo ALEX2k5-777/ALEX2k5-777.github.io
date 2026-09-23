@@ -4,6 +4,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initHeader();
+  initHeroNetworkAnimation();
   initTypewriter();
   initScrollAnimations();
   initConsole();
@@ -42,7 +43,115 @@ function initHeader() {
 }
 
 /* -------------------------------------------------------------
- * 2. Typewriter Effect
+ * 2. Subtle Interactive Constellation Network Canvas in Hero
+ * ------------------------------------------------------------- */
+function initHeroNetworkAnimation() {
+  const canvas = document.getElementById('hero-network-canvas');
+  if (!canvas) return;
+
+  const ctx = canvas.getContext('2d');
+  let width, height;
+  let particles = [];
+  const mouse = { x: null, y: null, maxDistance: 130 };
+
+  function resize() {
+    const parent = canvas.parentElement;
+    width = canvas.width = parent.offsetWidth;
+    height = canvas.height = parent.offsetHeight;
+    initParticles();
+  }
+
+  function initParticles() {
+    particles = [];
+    const count = Math.min(Math.floor((width * height) / 14000), 75);
+    for (let i = 0; i < count; i++) {
+      particles.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        vx: (Math.random() - 0.5) * 0.4,
+        vy: (Math.random() - 0.5) * 0.4,
+        radius: Math.random() * 1.5 + 1
+      });
+    }
+  }
+
+  window.addEventListener('resize', resize);
+  
+  window.addEventListener('mousemove', (e) => {
+    const rect = canvas.getBoundingClientRect();
+    if (e.clientY >= rect.top && e.clientY <= rect.bottom) {
+      mouse.x = e.clientX - rect.left;
+      mouse.y = e.clientY - rect.top;
+    } else {
+      mouse.x = null;
+      mouse.y = null;
+    }
+  });
+
+  window.addEventListener('mouseleave', () => {
+    mouse.x = null;
+    mouse.y = null;
+  });
+
+  function animate() {
+    ctx.clearRect(0, 0, width, height);
+
+    for (let i = 0; i < particles.length; i++) {
+      const p = particles[i];
+      p.x += p.vx;
+      p.y += p.vy;
+
+      if (p.x < 0 || p.x > width) p.vx *= -1;
+      if (p.y < 0 || p.y > height) p.vy *= -1;
+
+      // Draw particle node
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(148, 163, 184, 0.45)';
+      ctx.fill();
+
+      // Connect to mouse pointer softly
+      if (mouse.x !== null) {
+        const dx = mouse.x - p.x;
+        const dy = mouse.y - p.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < mouse.maxDistance) {
+          ctx.beginPath();
+          ctx.moveTo(p.x, p.y);
+          ctx.lineTo(mouse.x, mouse.y);
+          ctx.strokeStyle = `rgba(99, 102, 241, ${0.3 * (1 - dist / mouse.maxDistance)})`;
+          ctx.lineWidth = 1;
+          ctx.stroke();
+        }
+      }
+
+      // Connect to neighboring particles
+      for (let j = i + 1; j < particles.length; j++) {
+        const p2 = particles[j];
+        const dx = p.x - p2.x;
+        const dy = p.y - p2.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+
+        if (dist < 115) {
+          ctx.beginPath();
+          ctx.moveTo(p.x, p.y);
+          ctx.lineTo(p2.x, p2.y);
+          ctx.strokeStyle = `rgba(99, 102, 241, ${0.16 * (1 - dist / 115)})`;
+          ctx.lineWidth = 0.8;
+          ctx.stroke();
+        }
+      }
+    }
+
+    requestAnimationFrame(animate);
+  }
+
+  resize();
+  animate();
+}
+
+/* -------------------------------------------------------------
+ * 3. Typewriter Effect
  * ------------------------------------------------------------- */
 function initTypewriter() {
   const target = document.getElementById('typewriter-text');
@@ -90,7 +199,7 @@ function initTypewriter() {
 }
 
 /* -------------------------------------------------------------
- * 3. Scroll Reveal Observer
+ * 4. Scroll Reveal Observer
  * ------------------------------------------------------------- */
 function initScrollAnimations() {
   const revealElements = document.querySelectorAll('.reveal-on-scroll');
@@ -114,7 +223,7 @@ function initScrollAnimations() {
 }
 
 /* -------------------------------------------------------------
- * 4. Interactive Developer Console
+ * 5. Interactive Developer Console
  * ------------------------------------------------------------- */
 function initConsole() {
   const termOutput = document.getElementById('terminal-output');
@@ -248,7 +357,7 @@ function escapeHTML(str) {
 }
 
 /* -------------------------------------------------------------
- * 5. Project Filter Tabs
+ * 6. Project Filter Tabs
  * ------------------------------------------------------------- */
 function initProjectFilters() {
   const filterBtns = document.querySelectorAll('.filter-btn');
@@ -277,7 +386,7 @@ function initProjectFilters() {
 }
 
 /* -------------------------------------------------------------
- * 6. Back-To-Top Button Observer
+ * 7. Back-To-Top Button Observer
  * ------------------------------------------------------------- */
 function initBackToTop() {
   const btn = document.getElementById('back-to-top-btn');
@@ -297,7 +406,7 @@ function initBackToTop() {
 }
 
 /* -------------------------------------------------------------
- * 7. Contact Form Delivery (Web3Forms API)
+ * 8. Contact Form Delivery (Web3Forms API)
  * ------------------------------------------------------------- */
 function initContactForm() {
   const form = document.getElementById('portfolio-contact-form');
