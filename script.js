@@ -5,7 +5,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   initHeader();
   initHeroNetworkAnimation();
-  init3DAvatarParallax();
   initTypewriter();
   initScrollAnimations();
   initConsole();
@@ -43,93 +42,7 @@ function initHeader() {
   }
 }
 
-/* -------------------------------------------------------------
- * 1.5 3D Interactive Hero Avatar Parallax (Mouse Movement)
- * ------------------------------------------------------------- */
-function init3DAvatarParallax() {
-  const scene = document.getElementById('hero-3d-scene');
-  const card = document.getElementById('hero-3d-card');
-  const badge1 = document.getElementById('badge-1');
-  const badge2 = document.getElementById('badge-2');
-  const badge3 = document.getElementById('badge-3');
-
-  if (!scene || !card) return;
-
-  let targetX = 0;
-  let targetY = 0;
-  let currentX = 0;
-  let currentY = 0;
-
-  // Track mouse coordinates across the screen with gentle bounds
-  window.addEventListener('mousemove', (e) => {
-    const rect = scene.getBoundingClientRect();
-    const centerX = rect.left + rect.width / 2;
-    const centerY = rect.top + rect.height / 2;
-
-    // Subtle normalized mouse offset
-    const deltaX = (e.clientX - centerX) / (window.innerWidth / 2);
-    const deltaY = (e.clientY - centerY) / (window.innerHeight / 2);
-
-    targetX = Math.max(-1, Math.min(1, deltaX));
-    targetY = Math.max(-1, Math.min(1, deltaY));
-  });
-
-  window.addEventListener('mouseleave', () => {
-    targetX = 0;
-    targetY = 0;
-  });
-
-  // Mobile Touch Support
-  window.addEventListener('touchmove', (e) => {
-    if (e.touches.length > 0) {
-      const touch = e.touches[0];
-      const rect = scene.getBoundingClientRect();
-      const centerX = rect.left + rect.width / 2;
-      const centerY = rect.top + rect.height / 2;
-      targetX = Math.max(-1, Math.min(1, (touch.clientX - centerX) / 180));
-      targetY = Math.max(-1, Math.min(1, (touch.clientY - centerY) / 180));
-    }
-  }, { passive: true });
-
-  window.addEventListener('touchend', () => {
-    targetX = 0;
-    targetY = 0;
-  });
-
-  // 60 FPS Smooth Spring Interpolation Loop
-  function updateParallax() {
-    currentX += (targetX - currentX) * 0.06;
-    currentY += (targetY - currentY) * 0.06;
-
-    // Subtle 3D Tilt for Main Avatar Card (Gentle ~5 deg max for luxury feel)
-    const rotateY = currentX * 5.0;
-    const rotateX = -currentY * 5.0;
-    card.style.transform = `perspective(1000px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) scale3d(1.01, 1.01, 1.01)`;
-
-    // Gentle Parallax depth translation for floating trait badges
-    if (badge1) {
-      const b1X = currentX * 8;
-      const b1Y = currentY * 7;
-      badge1.style.transform = `translate3d(${b1X.toFixed(1)}px, ${b1Y.toFixed(1)}px, 18px)`;
-    }
-
-    if (badge2) {
-      const b2X = currentX * -9;
-      const b2Y = currentY * 6;
-      badge2.style.transform = `translate3d(${b2X.toFixed(1)}px, ${b2Y.toFixed(1)}px, 16px)`;
-    }
-
-    if (badge3) {
-      const b3X = currentX * 8;
-      const b3Y = currentY * -7;
-      badge3.style.transform = `translate3d(${b3X.toFixed(1)}px, ${b3Y.toFixed(1)}px, 18px)`;
-    }
-
-    requestAnimationFrame(updateParallax);
-  }
-
-  updateParallax();
-}
+/* (Hero avatar parallax removed — static clean display) */
 
 /* -------------------------------------------------------------
  * 2. Subtle Interactive Constellation Network Canvas in Hero
