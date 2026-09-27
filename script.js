@@ -52,10 +52,6 @@ function init3DAvatarParallax() {
   const badge1 = document.getElementById('badge-1');
   const badge2 = document.getElementById('badge-2');
   const badge3 = document.getElementById('badge-3');
-  const badge4 = document.getElementById('badge-4');
-  const dotPink = document.querySelector('.dot-pink');
-  const dotPurple = document.querySelector('.dot-purple');
-  const dotBlue = document.querySelector('.dot-blue');
 
   if (!scene || !card) return;
 
@@ -64,18 +60,18 @@ function init3DAvatarParallax() {
   let currentX = 0;
   let currentY = 0;
 
-  // Track mouse coordinates across the screen
+  // Track mouse coordinates across the screen with gentle bounds
   window.addEventListener('mousemove', (e) => {
     const rect = scene.getBoundingClientRect();
     const centerX = rect.left + rect.width / 2;
     const centerY = rect.top + rect.height / 2;
 
-    // Normalize mouse offset (-1 to 1)
+    // Subtle normalized mouse offset
     const deltaX = (e.clientX - centerX) / (window.innerWidth / 2);
     const deltaY = (e.clientY - centerY) / (window.innerHeight / 2);
 
-    targetX = Math.max(-1.2, Math.min(1.2, deltaX));
-    targetY = Math.max(-1.2, Math.min(1.2, deltaY));
+    targetX = Math.max(-1, Math.min(1, deltaX));
+    targetY = Math.max(-1, Math.min(1, deltaY));
   });
 
   window.addEventListener('mouseleave', () => {
@@ -90,8 +86,8 @@ function init3DAvatarParallax() {
       const rect = scene.getBoundingClientRect();
       const centerX = rect.left + rect.width / 2;
       const centerY = rect.top + rect.height / 2;
-      targetX = Math.max(-1, Math.min(1, (touch.clientX - centerX) / 160));
-      targetY = Math.max(-1, Math.min(1, (touch.clientY - centerY) / 160));
+      targetX = Math.max(-1, Math.min(1, (touch.clientX - centerX) / 180));
+      targetY = Math.max(-1, Math.min(1, (touch.clientY - centerY) / 180));
     }
   }, { passive: true });
 
@@ -100,50 +96,33 @@ function init3DAvatarParallax() {
     targetY = 0;
   });
 
-  // 60 FPS Spring Interpolation Loop
+  // 60 FPS Smooth Spring Interpolation Loop
   function updateParallax() {
-    currentX += (targetX - currentX) * 0.08;
-    currentY += (targetY - currentY) * 0.08;
+    currentX += (targetX - currentX) * 0.06;
+    currentY += (targetY - currentY) * 0.06;
 
-    // 3D Tilt for Main Avatar Picture Card
-    const rotateY = currentX * 18;
-    const rotateX = -currentY * 18;
-    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+    // Subtle 3D Tilt for Main Avatar Card (Gentle ~5 deg max for luxury feel)
+    const rotateY = currentX * 5.0;
+    const rotateX = -currentY * 5.0;
+    card.style.transform = `perspective(1000px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) scale3d(1.01, 1.01, 1.01)`;
 
-    // Parallax depth translation for floating trait badges
+    // Gentle Parallax depth translation for floating trait badges
     if (badge1) {
-      const b1X = currentX * 22;
-      const b1Y = currentY * 20;
-      badge1.style.transform = `translate3d(${b1X}px, ${b1Y}px, 45px) rotateX(${rotateX * 0.4}deg) rotateY(${rotateY * 0.4}deg)`;
+      const b1X = currentX * 8;
+      const b1Y = currentY * 7;
+      badge1.style.transform = `translate3d(${b1X.toFixed(1)}px, ${b1Y.toFixed(1)}px, 18px)`;
     }
 
     if (badge2) {
-      const b2X = currentX * -26;
-      const b2Y = currentY * 18;
-      badge2.style.transform = `translate3d(${b2X}px, ${b2Y}px, 35px) rotateX(${rotateX * 0.3}deg) rotateY(${rotateY * 0.3}deg)`;
+      const b2X = currentX * -9;
+      const b2Y = currentY * 6;
+      badge2.style.transform = `translate3d(${b2X.toFixed(1)}px, ${b2Y.toFixed(1)}px, 16px)`;
     }
 
     if (badge3) {
-      const b3X = currentX * 24;
-      const b3Y = currentY * -22;
-      badge3.style.transform = `translate3d(${b3X}px, ${b3Y}px, 50px) rotateX(${rotateX * 0.4}deg) rotateY(${rotateY * 0.4}deg)`;
-    }
-
-    if (badge4) {
-      const b4X = currentX * -20;
-      const b4Y = currentY * -24;
-      badge4.style.transform = `translate3d(${b4X}px, ${b4Y}px, 40px) rotateX(${rotateX * 0.35}deg) rotateY(${rotateY * 0.35}deg)`;
-    }
-
-    // Parallax for ambient glowing dots
-    if (dotPink) {
-      dotPink.style.transform = `translate3d(${currentX * -15}px, ${currentY * -15}px, 20px)`;
-    }
-    if (dotPurple) {
-      dotPurple.style.transform = `translate3d(${currentX * 20}px, ${currentY * 20}px, 30px)`;
-    }
-    if (dotBlue) {
-      dotBlue.style.transform = `translate3d(${currentX * 16}px, ${currentY * -16}px, 25px)`;
+      const b3X = currentX * 8;
+      const b3Y = currentY * -7;
+      badge3.style.transform = `translate3d(${b3X.toFixed(1)}px, ${b3Y.toFixed(1)}px, 18px)`;
     }
 
     requestAnimationFrame(updateParallax);

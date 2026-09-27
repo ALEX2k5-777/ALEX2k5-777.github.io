@@ -221,42 +221,37 @@ code, pre, .font-mono {
 #hero-3d-card {
   transform-style: preserve-3d;
   will-change: transform;
-  transition: transform 0.12s cubic-bezier(0.2, 0, 0.2, 1);
+  transition: transform 0.15s cubic-bezier(0.2, 0, 0.2, 1), box-shadow 0.3s ease;
+}
+
+#hero-3d-card:hover {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.9), 0 0 30px rgba(124, 58, 237, 0.15);
 }
 
 .floating-badge {
   transform-style: preserve-3d;
   will-change: transform;
   user-select: none;
-  transition: transform 0.15s cubic-bezier(0.2, 0, 0.2, 1), box-shadow 0.25s ease, border-color 0.25s ease;
+  transition: transform 0.2s cubic-bezier(0.2, 0, 0.2, 1), box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .floating-badge:hover {
-  border-color: rgba(255, 255, 255, 0.45);
-  box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.8), 0 0 20px rgba(99, 102, 241, 0.3);
-}
-
-.floating-dot {
-  will-change: transform;
-  pointer-events: none;
-  transition: transform 0.2s cubic-bezier(0.2, 0, 0.2, 1);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.8), 0 0 15px rgba(99, 102, 241, 0.25);
 }
 
 @keyframes floatGentleA {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-7px) rotate(1deg); }
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
 }
 
 @keyframes floatGentleB {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(7px) rotate(-1deg); }
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(4px); }
 }
 
 .badge-top-right { animation: floatGentleA 6s ease-in-out infinite; }
 .badge-mid-left { animation: floatGentleB 7s ease-in-out infinite; }
-.badge-bottom-right { animation: floatGentleA 8s ease-in-out infinite 1s; }
-.badge-bottom-left { animation: floatGentleB 6.5s ease-in-out infinite 0.5s; }
-.dot-pink { animation: floatGentleA 5s ease-in-out infinite 0.2s; }
-.dot-purple { animation: floatGentleB 6s ease-in-out infinite 0.8s; }
-.dot-blue { animation: floatGentleA 7s ease-in-out infinite 1.2s; }
+.badge-bottom-right { animation: floatGentleA 7.5s ease-in-out infinite 0.8s; }
+
 
